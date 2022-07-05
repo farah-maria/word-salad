@@ -51,6 +51,18 @@ h1 {
     font-weight: 300;
 }
 
+#button_go_back {
+    background-color: beige;
+    border: 3px solid palegreen;
+    padding: 3px;
+    margin: 7px;
+    border-radius: 2%;
+    width: auto;
+    color: black;
+    font-size: medium;
+    font-weight: 300;
+}
+
 i {
     font-size: 70%;
     color: #254c10;
@@ -62,7 +74,7 @@ i {
 /* answer buttons */
 #n {
     background-color: #fefebe;
-    border: gray solid 2px;
+    border: gray solid 4px;
     border-radius: 5%;
     font-size: larger;
     font-weight: bold;
@@ -72,7 +84,7 @@ i {
 
 #a {
     background-color: #83a5c0;
-    border: gray solid 2px;
+    border: gray solid 4px;
     border-radius: 5%;
     font-size: larger;
     font-weight: bold;
@@ -82,7 +94,7 @@ i {
 
 #v {
     background-color: #ffd7d7;
-    border: gray solid 2px;
+    border: gray solid 4px;
     border-radius: 5%;
     font-size: larger;
     font-weight: bold;
