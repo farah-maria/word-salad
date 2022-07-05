@@ -1,15 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Kite+One&family=Poppins:wght@300&family=Short+Stack&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Kite+One&family=Short+Stack&display=swap');
+
+
+h1 {
+    font-family: 'butterfly kids', cursive;
+    font-size: 70px;
+    font-weight: 900;
+}
+
 body {
     background-color: rgb(180,211,178);
     background-image: url('../images/background.jpg');
     background-size: cover;
+    font-size: small;
+    font-family: Poppins, sans-serif;
 }
 
 #text-area {
     background-color: rgb(180,211,178);
     box-sizing: border-box;
     width: 85%;
-    height: 90vh;
+    height: 100vh;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
+    font-size: small;
 }
