@@ -7,6 +7,7 @@ h1 {
     font-family: 'butterfly kids', cursive;
     font-size: 400%;
     font-weight: 900;
+    color: #404040;
 }
 
 #homepage-settings {
@@ -26,4 +27,30 @@ h1 {
     font-size: small;
     font-family: Poppins, sans-serif;
     border-radius: 7%;
+}
+
+#quiz_frame {
+    background-color: aliceblue;
+    border: 3px solid gray;
+    width: 500px;
+    height: auto;
+    border-radius: 7%;
+    padding: 10px;
+}
+
+.button_start_quiz {
+    background-color: #fefebe;
+    border: 5px solid #83a5c0;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 7%;
+    width: auto;
+    color: black;
+    font-size: medium;
+    font-weight: 300;
+}
+
+i {
+    font-size: 70%;
+    color: #254c10;
 }
