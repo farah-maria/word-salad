@@ -7,7 +7,7 @@ h1 {
     font-family: 'butterfly kids', cursive;
     font-size: 400%;
     font-weight: 900;
-    color: #404040;
+    color: #200015;
 }
 
 #homepage-settings {
@@ -17,7 +17,7 @@ h1 {
 }
 
 #text-area {
-    background-color: rgb(180,211,178);
+    background-color: #e9edef;
     box-sizing: content-box;
     width: 85%;
     height: auto;
@@ -27,6 +27,7 @@ h1 {
     font-size: small;
     font-family: Poppins, sans-serif;
     border-radius: 7%;
+    border: solid 3px orange;
 }
 
 #quiz_frame {
@@ -39,11 +40,11 @@ h1 {
 }
 
 .button_start_quiz {
-    background-color: #fefebe;
-    border: 5px solid #83a5c0;
+    background-color: #fae2e3;
+    border: 3px solid darkgreen;
     padding: 5px;
     margin: 10px;
-    border-radius: 7%;
+    border-radius: 2%;
     width: auto;
     color: black;
     font-size: medium;
@@ -57,4 +58,40 @@ i {
 
 #logo-header {
     margin-left: 1vw;
+}
+/* answer buttons */
+#n {
+    background-color: #fefebe;
+    border: #313537 solid 2px;
+    border-radius: 5%;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#a {
+    background-color: #83a5c0;
+    border: #313537 solid 2px;
+    border-radius: 5%;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#v {
+    background-color: #ffd7d7;
+    border: #313537 solid 2px;
+    border-radius: 5%;
+    font-size: larger;
+    font-weight: bold;
+}
+/*   */
+
+#question {
+    color: #313537;
+    font-size: large;
+}
+
+#keyword {
+    font-size: 300%;
+    color: black;
+    font-weight: bolder;
 }
