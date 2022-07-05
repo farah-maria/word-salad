@@ -28,4 +28,4 @@ let questions = [
         }
     }
 
-    alert("You got " + score + "/" + questions.length);
+    alert("You got " + score + "/" + questions.length); */

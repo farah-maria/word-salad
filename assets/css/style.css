@@ -9,7 +9,7 @@ h1 {
     font-weight: 900;
 }
 
-body {
+#homepage-settings {
     background-color: rgb(180,211,178);
     background-image: url('../images/background1.jpg');
     background-size: cover;
