@@ -12,7 +12,7 @@ h1 {
 
 #homepage-settings {
     background-color: rgb(180,211,178);
-    background-image: url('../images/background1.jpg');
+    background-image: url('../images/background.jpg');
     background-size: cover;
 }
 
@@ -123,12 +123,14 @@ i {
 }
 /* end of answer button styles  */
 
-#question {
-    color: #313537;
+#static-question {
+    font-size: 300%;
+    font-weight: bolder;
+    color: #464e51;
     font-size: large;
 }
 
-#keyword {
+#question {
     font-size: 300%;
     color: black;
     font-weight: bolder;
