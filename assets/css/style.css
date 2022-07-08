@@ -31,6 +31,19 @@ h1 {
     border: solid 3px orange;
 }
 
+.container {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    text-align: left;
+}
+
+#static-question {
+    height: 80%;
+    width: 80%;
+    margin-left: -40px;
+}
+
 /*#quiz_frame {
     background-color: aliceblue;
     border: 3px solid gray;
@@ -143,4 +156,18 @@ i {
 
 .justify-center {
     justify-content: center;
+}
+
+.choice-container {
+    display: flex;
+    min-width: 80rem;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transform: transform 100ms;
+    text-decoration: underline solid black;
 }
