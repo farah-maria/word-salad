@@ -31,14 +31,14 @@ h1 {
     border: solid 3px orange;
 }
 
-#quiz_frame {
+/*#quiz_frame {
     background-color: aliceblue;
     border: 3px solid gray;
     width: 500px;
     height: auto;
     border-radius: 7%;
     padding: 10px;
-}
+}*/
 
 .button_start_quiz {
     background-color: #fae2e3;
@@ -134,4 +134,13 @@ i {
     font-size: 300%;
     color: black;
     font-weight: bolder;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
 }
