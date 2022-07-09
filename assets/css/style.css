@@ -2,7 +2,183 @@
 @import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Kite+One&family=Poppins:wght@300&family=Short+Stack&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Kite+One&family=Short+Stack&display=swap');
 
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+  }
+  
+  .background-settings {
+    background-color: rgb(180,211,178);
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+}
 
+.text-area {
+    background-color: #e9edef;
+    box-sizing: content-box;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    padding-left: 15vw;
+    font-size: small;
+    font-family: Poppins, sans-serif;
+    border-radius: 7%;
+    border: solid 3px orange;
+    margin-top: 20%;
+}
+
+  body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue), 100%, 20%);
+  }
+  
+  body.correct {
+    --hue: var(--hue-correct);
+  }
+  
+  body.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .container {
+    width: 800px;
+    max-width: 80%;
+    background-color: #e9edef;
+    box-sizing: content-box;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: small;
+    font-family: Poppins, sans-serif;
+    border: solid 3px orange;
+    border-radius: 5px;
+    padding: 10px;
+    
+  }
+  
+  .btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .btn {
+    --hue: var(--hue-neutral);
+    border: 3px solid gray;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+  }
+  
+  .btn:hover {
+    border-color: black;
+  }
+  
+  .btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+  }
+  
+  .btn.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Background Styles Only */
+  
+  @import url('https://fonts.googleapis.com/css?family=Raleway');
+  
+  
+  html {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #DFDFDF;
+  }
+  
+  .side-links {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  
+  .side-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: white;
+    width: 180px;
+    padding: 10px 0;
+    border-radius: 10px;
+  }
+  
+  .side-link-youtube {
+    background-color: red;
+  }
+  
+  .side-link-twitter {
+    background-color: #1DA1F2;
+  }
+  
+  .side-link-github {
+    background-color: #6e5494;
+  }
+  
+  .side-link-text {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  
+  .side-link-icon {
+    color: white;
+    font-size: 30px;
+  }
+/*
 h1 {
     font-family: 'butterfly kids', cursive;
     font-size: 400%;
@@ -10,7 +186,7 @@ h1 {
     color: #200015;
 }
 
-.homepage-settings {
+.background-settings {
     background-color: rgb(180,211,178);
     background-image: url('../images/background.jpg');
     background-size: cover;
@@ -51,7 +227,7 @@ h1 {
     height: auto;
     border-radius: 7%;
     padding: 10px;
-}*/
+}
 
 .button_start_quiz {
     background-color: #fae2e3;
@@ -100,7 +276,7 @@ i {
 #logo-header {
     margin-left: 2vw;
 }
-/* answer buttons */
+/* answer buttons 
 
 .btn {
 
@@ -136,7 +312,7 @@ i {
 #incorrect {
     background-color: red;
 }
-/* end of answer button styles  */
+/* end of answer button styles  
 #static-question {
     font-size: 300%;
     font-weight: bolder;
@@ -165,7 +341,7 @@ i {
     min-width: 80rem;
     margin-top: 1%;
     margin-bottom: 1%;
-} */
+} 
 
 .btn:hover {
     cursor: pointer;
@@ -176,4 +352,4 @@ i {
 
 #back {
     margin-left: 800px;
-}
+} */
