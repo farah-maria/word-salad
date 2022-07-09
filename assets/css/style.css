@@ -106,6 +106,7 @@ i {
   
   .btn:hover {
     border-color: black;
+    border: 6px solid darkblue;
   }
   
   .btn.correct {
@@ -114,10 +115,22 @@ i {
   }
   
   .btn.wrong {
-    background-color: orangered;
+    background-color: whitesmoke;
     color: black;
   }
   
+  .button_start_quiz {
+    background-color: #fae2e3;
+    border: 3px solid darkgreen;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 2%;
+    width: auto;
+    color: black;
+    font-size: medium;
+    font-weight: 300;
+    font-size: medium;
+}
   .start-btn, .next-btn {
     font-size: 1.5rem;
     font-weight: bold;
