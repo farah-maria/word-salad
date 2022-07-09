@@ -1,94 +1,116 @@
-const question = document.querySelector('#question');
-const choices = Array.from(document.querySelectorAll('.choice-text'));
+const startButton = document.getElementById('start-btn')
+const nextButton = document.getElementById('next-btn')
+const questionContainerElement = document.getElementById('question-container')
+const questionElement = document.getElementById('question')
+const answerButtonsElement = document.getElementById('answer-buttons')
 
+let shuffledQuestions, currentQuestionIndex
 
-let currentQuestion = {}
-let acceptingAnswers = true
-let availableQuestions = []
+startButton.addEventListener('click', startGame)
+nextButton.addEventListener('click', () => {
+  currentQuestionIndex++
+  setNextQuestion()
+})
 
-let questions = [
-    {
-        question: "apple",
-        choice1: "noun",
-        choice2: "adjective",
-        choice3: "verb",
-        choice4: "adverb",
-        answer: 1,
-    },
-    {
-        question:"round",
-        choice1: "noun",
-        choice2: "adjective",
-        choice3: "verb",
-        choice4: "adverb",
-        answer: 2,
-    },
-    {
-        question: "quickly",
-        choice1: "noun",
-        choice2: "adjective",
-        choice3: "verb",
-        choice4: "adverb",
-        answer: 4,
-    },
-    {
-        question: "rolled",
-        choice1: "noun",
-        choice2: "adjective",
-        choice3: "verb",
-        choice4: "adverb",
-        answer: 3,
-    }
-]
-
-startGame = () => {
-    questionCounter = 0
-    score = 0
-    availableQuestions = [...questions]
-    getNewQuestion()
+function startGame() {
+  startButton.classList.add('hide')
+  shuffledQuestions = questions.sort(() => Math.random() - .5)
+  currentQuestionIndex = 0
+  questionContainerElement.classList.remove('hide')
+  setNextQuestion()
 }
 
-const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
-    currentQuestion = availableQuestions[questionsIndex]
-    question.innerText = currentQuestion.question
+function setNextQuestion() {
+  resetState()
+  showQuestion(shuffledQuestions[currentQuestionIndex])
+}
 
-    choices.forEach(choice => {
-        const number = choice.dataset['number']
-        choice.innerText = currentQuestion['choice' + number]
-    })
+function showQuestion(question) {
+  questionElement.innerText = question.question
+  question.answers.forEach(answer => {
+    const button = document.createElement('button')
+    button.innerText = answer.text
+    button.classList.add('btn')
+    if (answer.correct) {
+      button.dataset.correct = answer.correct
+    }
+    button.addEventListener('click', selectAnswer)
+    answerButtonsElement.appendChild(button)
+  })
+}
 
-    acceptingAnswers = true
+function resetState() {
+  clearStatusClass(document.body)
+  nextButton.classList.add('hide')
+  while (answerButtonsElement.firstChild) {
+    answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+  }
+}
 
+function selectAnswer(e) {
+  const selectedButton = e.target
+  const correct = selectedButton.dataset.correct
+  setStatusClass(document.body, correct)
+  Array.from(answerButtonsElement.children).forEach(button => {
+    setStatusClass(button, button.dataset.correct)
+  })
+  if (shuffledQuestions.length > currentQuestionIndex + 1) {
+    nextButton.classList.remove('hide')
+  } else {
+    startButton.innerText = 'Restart'
+    startButton.classList.remove('hide')
+  }
+}
 
-    choices.forEach(choice => {
-        const number = choice.dataset['number']
-        choice.innerText = currentQuestion['choice' + number]
-    })
+function setStatusClass(element, correct) {
+  clearStatusClass(element)
+  if (correct) {
+    element.classList.add('correct')
+  } else {
+    element.classList.add('wrong')
+  }
+}
 
-    availableQuestions.splice(questionsIndex, 1)
+function clearStatusClass(element) {
+  element.classList.remove('correct')
+  element.classList.remove('wrong')
+}
 
-    acceptingAnswers = true
-
-
-choices.forEach(choice => {
-    choice.addEventListener('click', e => {
-        if(!acceptingAnswers) return
-
-        acceptingAnswers = false
-        const selectedChoice = e.target
-        const selectedAnswer = selectedChoice.dataset['number']
-
-        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
-
-        if(classToApply === 'correct') {
-            incrementScore(SCORE_POINTS)
-        }
-
-        selectedChoice.parentElement.classList.add(classToApply)
-
-        setTimeout(() => {
-            selectedChoice.parentElement.classList.remove(classToApply)
-            getNewQuestion()
-
-        }, 1000)
-    })})
+const questions = [
+  {
+    question: 'apple',
+    answers: [
+      { text: 'noun', correct: true },
+      { text: 'verb', correct: false }
+    ]
+  },
+  {
+    question: 'tall',
+    answers: [
+      { text: 'adjective', correct: true },
+      { text: 'verb', correct: false },
+      { text: 'noun', correct: false },
+      { text: 'adverb', correct: false }
+    ]
+  },
+  {
+    question: 'rolled',
+    answers: [
+      { text: 'noun', correct: false },
+      { text: 'verb', correct: true },
+      { text: 'adverb', correct: false },
+      { text: 'adjective', correct: false }
+    ]
+  },
+  {
+    question: 'briskly',
+    answers: [
+      { text: 'noun', correct: false },
+      { text: 'adverb', correct: true },
+      { text: 'verb', correct: false },
+      { text: 'adjective', correct: false }
+      
+      
+    ]
+  }
+]
