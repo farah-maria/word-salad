@@ -16,7 +16,7 @@ h1 {
     background-size: cover;
 }
 
-#text-area {
+.text-area {
     background-color: #e9edef;
     box-sizing: content-box;
     width: 50%;
@@ -131,7 +131,7 @@ i {
     margin-left: 0;
 }
 
-#question {
+#question-container {
     font-size: 300%;
     color: black;
     font-weight: bolder;

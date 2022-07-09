@@ -41,35 +41,54 @@ let questions = [
     }
 ]
 
+startGame = () => {
+    questionCounter = 0
+    score = 0
+    availableQuestions = [...questions]
+    getNewQuestion()
+}
 
-/*
+const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
+    currentQuestion = availableQuestions[questionsIndex]
+    question.innerText = currentQuestion.question
 
-let score = 0;
-let questions = [
-    {
-        prompt: "apple\n(a) noun\n(b) verb \n\(c) adjective",
-        answer: "a"
-    },
-    {
-        prompt: "rolled\n(a) noun\n(b) verb \n\(c) adjective",
-        answer: "b"
-    },
-    
-    {
-        prompt: "round\n(a) noun\n(b) verb \n\(c) adjective",
-        answer: "c"
-    },
+    choices.forEach(choice => {
+        const number = choice.dataset['number']
+        choice.innerText = currentQuestion['choice' + number]
+    })
 
-    ]
+    acceptingAnswers = true
 
-    for (i = 0; i < questions.length; i++) {
-        let response = window.prompt(questions[i].prompt);
-        if (response == questions[i].answer) {
-            score++;
-            alert("Correct! Well done :)");
-        } else {
-            alert("Try again");
+
+    choices.forEach(choice => {
+        const number = choice.dataset['number']
+        choice.innerText = currentQuestion['choice' + number]
+    })
+
+    availableQuestions.splice(questionsIndex, 1)
+
+    acceptingAnswers = true
+
+
+choices.forEach(choice => {
+    choice.addEventListener('click', e => {
+        if(!acceptingAnswers) return
+
+        acceptingAnswers = false
+        const selectedChoice = e.target
+        const selectedAnswer = selectedChoice.dataset['number']
+
+        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+
+        if(classToApply === 'correct') {
+            incrementScore(SCORE_POINTS)
         }
-    }
 
-    alert("You got " + score + "/" + questions.length); */
+        selectedChoice.parentElement.classList.add(classToApply)
+
+        setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classToApply)
+            getNewQuestion()
+
+        }, 1000)
+    })})
