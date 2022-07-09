@@ -18,6 +18,23 @@
     background-size: cover;
 }
 
+h1 {
+    font-family: 'butterfly kids', cursive;
+    font-size: 400%;
+    font-weight: 900;
+    color: #200015;
+}
+
+i {
+    font-size: 70%;
+    color: #254c10;
+}
+
+#logo-header {
+    margin-left: 3vw;
+    margin-top: -60vw;
+}
+
 .text-area {
     background-color: #e9edef;
     box-sizing: content-box;
