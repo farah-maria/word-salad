@@ -46,7 +46,7 @@ i {
     font-family: Poppins, sans-serif;
     border-radius: 7%;
     border: solid 3px orange;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 body {
@@ -87,7 +87,10 @@ body {
     font-size: large;
     font-weight: bold;
 }
-  
+
+.example {
+  color: darkcyan;
+}
 .btn {
     font-family: Poppins, sans-serif;
     border: 3px solid gray;
