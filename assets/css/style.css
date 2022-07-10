@@ -71,7 +71,7 @@ body {
     
 }
   
-.btn-grid {
+.answer-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 10px;

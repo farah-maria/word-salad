@@ -4,25 +4,25 @@ const quizContainerElement = document.getElementById('quiz-container')
 const answersElement = document.getElementById('answer-clicks')
 const quizWordElement = document.getElementById('question')
 
-let shuffledQuestions, currentQuestionIndex
+let shuffledWords, currentWord
 
 readyBtn.addEventListener('click', startGame)
 nextFrame.addEventListener('click', () => {
-  currentQuestionIndex++
-  setNextQuestion()
+  currentWord++
+  setNextWord()
 })
 
 function startGame() {
   readyBtn.classList.add('hide')
-  shuffledQuestions = questions.sort(() => Math.random() - .5)
-  currentQuestionIndex = 0 
+  shuffleQWords = questions.sort(() => Math.random() - .5)
+  currentWord = 0 
   quizContainerElement.classList.remove('hide')
-  setNextQuestion()
+  setNextWord()
 }
 
-function setNextQuestion() {
+function setNextWord() {
   resetState()
-  showQuestion(shuffledQuestions[currentQuestionIndex])
+  showQuestion(shuffleQWords[currentWord])
 }
 
 function showQuestion(question) {
@@ -54,7 +54,7 @@ function selectAnswer(e) {
   Array.from(answersElement.children).forEach(button => {
     setStatusClass(button, button.dataset.correct)
   })
-  if (shuffledQuestions.length > currentQuestionIndex + 1) {
+  if (shuffleQWords.length > currentWord + 1) {
     nextFrame.classList.remove('hide')
   } else {
     readyBtn.innerText = 'Restart'
