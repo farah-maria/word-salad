@@ -1,22 +1,21 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Kite+One&family=Poppins:wght@300&family=Short+Stack&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Kite+One&family=Short+Stack&display=swap');
 
 *, *::before, *::after {
     box-sizing: border-box;
-  }
+}
   
 .background-settings {
-    background-color: rgb(180,211,178);
-    background-image: url('../images/background.jpg');
-    background-size: cover;
+  background-color: rgb(180,211,178);
+  background-image: url('../images/background.jpg');
+  background-size: cover;
 }
 
 h1 {
-    font-family: 'butterfly kids', cursive;
-    font-size: 400%;
-    font-weight: 900;
-    color: #200015;
+  font-family: 'butterfly kids', cursive;
+  font-size: 400%;
+  font-weight: 900;
+  color: #200015;
 }
 
 i {
@@ -29,53 +28,51 @@ i {
 }
 
 #logo-header {
-    margin-left: 4vw;
-    margin-top: -60vh;
+  margin-left: 4vw;
+  margin-top: -60vh;
 }
 
 .text-area {
-    background-color: #e9edef;
-    box-sizing: content-box;
-    width: 50%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1%;
-    padding-left: 15vw;
-    font-size: medium;
-    font-family: Poppins, sans-serif;
-    border-radius: 7%;
-    border: solid 3px orange;
-    margin-top: 1%;
+  background-color: #e9edef;
+  box-sizing: content-box;
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1%;
+  padding-left: 2vw;
+  font-size: medium;
+  font-family: Poppins, sans-serif;
+  border-radius: 7%;
+  border: solid 3px orange;  
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    font-family: Poppins, sans-serif;
-    font-size: medium;
-  }
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins, sans-serif;
+  font-size: medium;
+}
   
 .container {
-    width: 800px;
-    max-width: 80%;
-    background-color: #e9edef;
-    box-sizing: content-box;
-    width: 50%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: medium;
-    font-family: Poppins, sans-serif;
-    border: solid 3px orange;
-    border-radius: 5px;
-    padding: 10px;
-    
+  width: 800px;
+  max-width: 80%;
+  background-color: #e9edef;
+  box-sizing: content-box;
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: medium;
+  font-family: Poppins, sans-serif;
+  border: solid 3px orange;
+  border-radius: 5px;
+  padding: 10px;    
 }
   
 .answer-grid {
@@ -91,6 +88,7 @@ body {
 .example {
   color: darkcyan;
 }
+
 .btn {
     font-family: Poppins, sans-serif;
     border: 3px solid gray;
@@ -135,49 +133,50 @@ body {
 }
 
 #go_to_quiz {
-    background-color: #fae2e3;
-    border: 3px solid olive;
-    padding: 5px;
-    margin: 10px;
-    border-radius: 7%;
-    width: auto;
-    color: black;
-    font-weight: bold;
-    font-size: medium;
-    font-family: Poppins, sans-serif;
+  background-color: #fae2e3;
+  border: 3px solid olive;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 7%;
+  width: auto;
+  color: black;
+  font-weight: bold;
+  font-size: medium;
+  font-family: Poppins, sans-serif;
 }
-  .ready .next-frame {
-    font-size: 3rem;
-    font-family: Poppins, sans-serif;
-    padding: 5px 10px;
-    color: #254c10;
-    background-color: papayawhip;
-    border: 3px solid #2E4DA7;
-  }
+
+.ready .next-frame {
+  font-size: 3rem;
+  font-family: Poppins, sans-serif;
+  padding: 5px 10px;
+  color: #254c10;
+  background-color: papayawhip;
+  border: 3px solid #2E4DA7;
+}
  
-  .prompts {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.prompts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   
-  .hide {
+.hide {
     display: none;
-  }
+}
+
+#question {
+  font-size: 500%;
+  font-weight: 400;
+  margin-left: 10%;
+  padding-bottom: 3%;
+  font-family: Poppins, sans-serif;
+}
   
-  #question {
-    font-size: 500%;
-    font-weight: 400;
-    margin-left: 10%;
-    padding-bottom: 3%;
-    font-family: Poppins, sans-serif;
-  }
-  
-  #static-question {
-    height: 80%;
-    width: 80%;
-    margin-left: 1%;
-    color: #43464b;
-    font-size: large;
-    font-family: Poppins, sans-serif;
+#static-question {
+  height: 80%;
+  width: 80%;
+  margin-left: 1%;
+  color: #43464b;
+  font-size: large;
+  font-family: Poppins, sans-serif;
 }
