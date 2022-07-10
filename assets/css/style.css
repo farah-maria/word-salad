@@ -102,11 +102,17 @@ body {
     background-color: palevioletred;
     color: black;
 }
- 
+
+.word-class {
+  font-size: large;
+  font-weight: bold;  
+}
+
 #definitions {
   font-weight: bold;
   padding: 0;
 }
+
 
 #definitions:hover {
   text-decoration: solid underline 3px black;
@@ -115,10 +121,10 @@ body {
 
 #go_to_quiz {
     background-color: #fae2e3;
-    border: 3px solid darkgreen;
+    border: 3px solid olive;
     padding: 5px;
     margin: 10px;
-    border-radius: 2%;
+    border-radius: 7%;
     width: auto;
     color: black;
     font-weight: bold;
