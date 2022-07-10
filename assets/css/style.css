@@ -46,6 +46,7 @@ i {
     font-family: Poppins, sans-serif;
     border-radius: 7%;
     border: solid 3px orange;
+    margin-top: 2%;
 }
 
 body {
@@ -104,7 +105,6 @@ body {
     cursor: pointer;
 }
 
-
 .btn.correct {
     background-color: green;
     color: black;
@@ -127,11 +127,9 @@ body {
   font-family: Poppins, sans-serif;
 }
 
-
 #definitions:hover {
   text-decoration: solid underline 3px black;
 }
-
 
 #go_to_quiz {
     background-color: #fae2e3;
@@ -154,7 +152,6 @@ body {
     border: 3px solid #2E4DA7;
   }
  
-
   .prompts {
     display: flex;
     justify-content: center;
@@ -172,7 +169,6 @@ body {
     padding-bottom: 3%;
     font-family: Poppins, sans-serif;
   }
-  
   
   #static-question {
     height: 80%;
