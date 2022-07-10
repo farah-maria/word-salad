@@ -23,15 +23,6 @@ i {
     color: #254c10;
 }
 
-#arrow {
-    font-size: 200%;
-}
-
-#logo-header {
-  margin-left: 4vw;
-  margin-top: -60vh;
-}
-
 .text-area {
   background-color: #e9edef;
   box-sizing: content-box;
@@ -71,10 +62,23 @@ body {
   font-size: medium;
   font-family: Poppins, sans-serif;
   border: solid 3px orange;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px;    
 }
-  
+
+#arrow {
+  font-size: 200%;
+}
+
+#home {
+  font-size: 120%;
+}
+
+#logo-header {
+margin-left: 4vw;
+margin-top: -60vh;
+}
+
 .answer-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -146,7 +150,8 @@ body {
 }
 
 .ready .next-frame {
-  font-size: 3rem;
+  font-size: 300%;
+  font-weight: bolder;
   font-family: Poppins, sans-serif;
   padding: 5px 10px;
   color: #254c10;
