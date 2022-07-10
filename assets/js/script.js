@@ -112,13 +112,147 @@ const questions = [
     ]
   },
   {
+    question: 'dance',
+    answers: [
+      { text: 'noun', correct: false },
+      { text: 'adjective', correct: false },
+      { text: 'verb', correct: true },
+      { text: 'adverb', correct: false }
+      
+    ]
+  }, 
+  {
+    question: 'blonde',
+    answers: [
+      { text: 'noun', correct: false },
+      { text: 'adjective', correct: true },
+      { text: 'verb', correct: false },
+      { text: 'adverb', correct: false }
+      
+    ]
+  },
+  {
+    question: 'hand',
+    answers: [
+      { text: 'noun', correct: true },
+      { text: 'adjective', correct: false },
+      { text: 'verb', correct: false },
+      { text: 'adverb', correct: false }
+      
+    ]
+  },
+  {
+    question: 'limp',
+    answers: [
+      { text: 'noun', correct: false },
+      { text: 'adjective', correct: false },
+      { text: 'verb', correct: true },
+      { text: 'adverb', correct: false }
+      
+    ]
+  },
+  {
+    question: 'hot',
+    answers: [
+      { text: 'noun', correct: false },
+      { text: 'adjective', correct: true },
+      { text: 'verb', correct: false },
+      { text: 'adverb', correct: false }
+      
+    ]
+  },
+  {
+    question: 'sleep',
+    answers: [
+      { text: 'noun', correct: false },
+      { text: 'adjective', correct: false },
+      { text: 'verb', correct: true },
+      { text: 'adverb', correct: false }
+      
+    ]
+  },
+  {
+    question: 'bravely',
+    answers: [
+      { text: 'noun', correct: false },
+      { text: 'adjective', correct: false },
+      { text: 'verb', correct: false },
+      { text: 'adverb', correct: true }
+      
+    ]
+  },
+  {
+    question: 'funnily',
+    answers: [
+      { text: 'noun', correct: false },
+      { text: 'adjective', correct: false },
+      { text: 'verb', correct: false },
+      { text: 'adverb', correct: true }
+      
+    ]
+  },
+  {
+    question: 'smooth',
+    answers: [
+      { text: 'noun', correct: false },
+      { text: 'adjective', correct: true },
+      { text: 'verb', correct: false },
+      { text: 'adverb', correct: false }
+      
+    ]
+  },
+  {
+    question: 'city',
+    answers: [
+      { text: 'noun', correct: true },
+      { text: 'adjective', correct: false },
+      { text: 'verb', correct: false },
+      { text: 'adverb', correct: false }
+    ]
+  },
+  {
+    question: 'town',
+    answers: [
+      { text: 'noun', correct: true },
+      { text: 'adjective', correct: false },
+      { text: 'verb', correct: false },
+      { text: 'adverb', correct: false }
+    ]
+  },
+  {
+    question: 'furry',
+    answers: [
+      { text: 'noun', correct: false },
+      { text: 'adjective', correct: true },
+      { text: 'verb', correct: false },
+      { text: 'adverb', correct: false } 
+    ]
+  },
+  {
+    question: 'walk',
+    answers: [
+      { text: 'noun', correct: false },
+      { text: 'adjective', correct: false },
+      { text: 'verb', correct: true },
+      { text: 'adverb', correct: false }
+    ]
+  },
+  {
+    question: 'calmly',
+    answers: [
+      { text: 'noun', correct: false },
+      { text: 'adjective', correct: false },
+      { text: 'verb', correct: false },
+      { text: 'adverb', correct: true }
+    ]
+  },
+  {
     question: 'briskly',
     answers: [
       { text: 'adjective', correct: false },
       { text: 'noun', correct: false },
       { text: 'verb', correct: false },
       { text: 'adverb', correct: true }
-      
     ]
   }
 ]
