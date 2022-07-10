@@ -1,8 +1,8 @@
 const readyBtn = document.getElementById('ready-btn')
 const nextFrame = document.getElementById('next-frame')
-const questionContainerElement = document.getElementById('question-container')
-const questionElement = document.getElementById('question')
-const answerButtonsElement = document.getElementById('answer-buttons')
+const quizContainerElement = document.getElementById('quiz-container')
+const answersElement = document.getElementById('answer-clicks')
+const quizWordElement = document.getElementById('question')
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -16,7 +16,7 @@ function startGame() {
   readyBtn.classList.add('hide')
   shuffledQuestions = questions.sort(() => Math.random() - .5)
   currentQuestionIndex = 0
-  questionContainerElement.classList.remove('hide')
+  quizContainerElement.classList.remove('hide')
   setNextQuestion()
 }
 
@@ -26,7 +26,7 @@ function setNextQuestion() {
 }
 
 function showQuestion(question) {
-  questionElement.innerText = question.question
+  quizWordElement.innerText = question.question
   question.answers.forEach(answer => {
     const button = document.createElement('button')
     button.innerText = answer.text
@@ -35,15 +35,15 @@ function showQuestion(question) {
       button.dataset.correct = answer.correct
     }
     button.addEventListener('click', selectAnswer)
-    answerButtonsElement.appendChild(button)
+    answersElement.appendChild(button)
   })
 }
 
 function resetState() {
   clearStatusClass(document.body)
   nextFrame.classList.add('hide')
-  while (answerButtonsElement.firstChild) {
-    answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+  while (answersElement.firstChild) {
+    answersElement.removeChild(answersElement.firstChild)
   }
 }
 
@@ -51,7 +51,7 @@ function selectAnswer(e) {
   const selectedButton = e.target
   const correct = selectedButton.dataset.correct
   setStatusClass(document.body, correct)
-  Array.from(answerButtonsElement.children).forEach(button => {
+  Array.from(answersElement.children).forEach(button => {
     setStatusClass(button, button.dataset.correct)
   })
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
