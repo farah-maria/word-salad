@@ -101,6 +101,7 @@ body {
   
 .btn:hover {
     border: 4px dotted #427379 ;
+    cursor: pointer;
 }
 
 
