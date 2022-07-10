@@ -1,79 +1,85 @@
-const readyBtn = document.getElementById('ready-btn')
-const nextFrame = document.getElementById('next-frame')
-const quizContainerElement = document.getElementById('quiz-container')
-const answersElement = document.getElementById('answer-clicks')
-const quizWordElement = document.getElementById('question')
+const readyBtn = document.getElementById('ready-btn');
 
-let shuffledWords, currentWord
+const nextFrame = document.getElementById('next-frame');
 
-readyBtn.addEventListener('click', startGame)
+const quizContainerElement = document.getElementById('quiz-container');
+
+const answersElement = document.getElementById('answer-clicks');
+
+const quizWordElement = document.getElementById('question');
+
+let shuffledWords, currentWord;
+
+readyBtn.addEventListener('click', startGame);
+
 nextFrame.addEventListener('click', () => {
   currentWord++
   setNextWord()
-})
+});
 
 function startGame() {
-  readyBtn.classList.add('hide')
-  shuffleQWords = questions.sort(() => Math.random() - .5)
-  currentWord = 0 
-  quizContainerElement.classList.remove('hide')
-  setNextWord()
+  readyBtn.classList.add('hide');
+  shuffleQWords = questions.sort(() => Math.random() - .5);
+  currentWord = 0 ;
+  quizContainerElement.classList.remove('hide');
+  setNextWord();
 }
 
 function setNextWord() {
-  resetState()
-  showQuestion(shuffleQWords[currentWord])
+  resetState();
+  showQuestion(shuffleQWords[currentWord]);
 }
 
 function showQuestion(question) {
-  quizWordElement.innerText = question.question
+  quizWordElement.innerText = question.question;
   question.answers.forEach(answer => {
-    const button = document.createElement('button')
-    button.innerText = answer.text
-    button.classList.add('btn')
+    const button = document.createElement('button');
+    button.innerText = answer.text;
+    button.classList.add('btn');
     if (answer.correct) {
-      button.dataset.correct = answer.correct
+      button.dataset.correct = answer.correct;
     }
-    button.addEventListener('click', selectAnswer)
-    answersElement.appendChild(button)
+
+    button.addEventListener('click', clickBtn);
+    answersElement.appendChild(button);
   })
 }
 
 function resetState() {
-  clearStatusClass(document.body)
-  nextFrame.classList.add('hide')
+  clearStatusClass(document.body);
+  nextFrame.classList.add('hide');
   while (answersElement.firstChild) {
-    answersElement.removeChild(answersElement.firstChild)
+    answersElement.removeChild(answersElement.firstChild);
   }
 }
 
-function selectAnswer(e) {
-  const selectedButton = e.target
-  const correct = selectedButton.dataset.correct
-  setStatusClass(document.body, correct)
+function clickBtn(e) {
+  const selectedButton = e.target;
+  const correct = selectedButton.dataset.correct;
+  setStatusClass(document.body, correct);
   Array.from(answersElement.children).forEach(button => {
-    setStatusClass(button, button.dataset.correct)
+    setStatusClass(button, button.dataset.correct);
   })
   if (shuffleQWords.length > currentWord + 1) {
-    nextFrame.classList.remove('hide')
+    nextFrame.classList.remove('hide');
   } else {
-    readyBtn.innerText = 'Restart'
-    readyBtn.classList.remove('hide')
+    readyBtn.innerText = 'Restart';
+    readyBtn.classList.remove('hide');
   }
 }
 
 function setStatusClass(element, correct) {
-  clearStatusClass(element)
+  clearStatusClass(element);
   if (correct) {
-    element.classList.add('correct')
+    element.classList.add('correct');
   } else {
-    element.classList.add('wrong')
+    element.classList.add('wrong');
   }
 }
 
 function clearStatusClass(element) {
-  element.classList.remove('correct')
-  element.classList.remove('wrong')
+  element.classList.remove('correct');
+  element.classList.remove('wrong');
 }
 
 const questions = [

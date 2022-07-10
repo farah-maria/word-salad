@@ -137,21 +137,6 @@ body {
     border: 3px solid #2E4DA7;
   }
  
-.btn-n {
-    background-color: #fefebe;   
-}
-
-.btn-a {
-    background-color: #83a5c0;
-}
-
-.btn-v {
-    background-color: #ffd7d7;
-}
-
-.btn-av {
-    background-color:#dcedc8;
-}
 
   .prompts {
     display: flex;
