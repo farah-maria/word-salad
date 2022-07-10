@@ -85,6 +85,7 @@ body {
     padding: 5px 10px;
     color: black;
     outline: none;
+    background-color: #abdee6;
 }
   
 .btn:hover {
@@ -101,7 +102,17 @@ body {
     background-color: palevioletred;
     color: black;
 }
-  
+ 
+#definitions {
+  font-weight: bold;
+  padding: 0;
+}
+
+#definitions:hover {
+  text-decoration: solid underline 3px black;
+}
+
+
 #go_to_quiz {
     background-color: #fae2e3;
     border: 3px solid darkgreen;
@@ -121,19 +132,19 @@ body {
     border: 3px solid #2E4DA7;
   }
  
-#n  {
+.btn-n {
     background-color: #fefebe;   
 }
 
-#a {
+.btn-a {
     background-color: #83a5c0;
 }
 
-#v {
+.btn-v {
     background-color: #ffd7d7;
 }
 
-#av {
+.btn-av {
     background-color:#dcedc8;
 }
 

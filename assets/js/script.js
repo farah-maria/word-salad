@@ -81,15 +81,17 @@ const questions = [
     question: 'apple',
     answers: [
       { text: 'noun', correct: true },
-      { text: 'verb', correct: false }
+      { text: 'adjective', correct: false},
+      { text: 'verb', correct: false },
+      { text: 'adverb', correct: false}
     ]
   },
   {
     question: 'tall',
     answers: [
+      { text: 'noun', correct: false },
       { text: 'adjective', correct: true },
       { text: 'verb', correct: false },
-      { text: 'noun', correct: false },
       { text: 'adverb', correct: false }
     ]
   },
@@ -97,19 +99,19 @@ const questions = [
     question: 'rolled',
     answers: [
       { text: 'noun', correct: false },
+      { text: 'adjective', correct: false },
       { text: 'verb', correct: true },
-      { text: 'adverb', correct: false },
-      { text: 'adjective', correct: false }
+      { text: 'adverb', correct: false }
+      
     ]
   },
   {
     question: 'briskly',
     answers: [
+      { text: 'adjective', correct: false },
       { text: 'noun', correct: false },
-      { text: 'adverb', correct: true },
       { text: 'verb', correct: false },
-      { text: 'adjective', correct: false }
-      
+      { text: 'adverb', correct: true }
       
     ]
   }
