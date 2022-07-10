@@ -15,7 +15,7 @@ nextFrame.addEventListener('click', () => {
 function startGame() {
   readyBtn.classList.add('hide')
   shuffledQuestions = questions.sort(() => Math.random() - .5)
-  currentQuestionIndex = 0
+  currentQuestionIndex = 0 
   quizContainerElement.classList.remove('hide')
   setNextQuestion()
 }
