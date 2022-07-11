@@ -8,12 +8,21 @@ const answersElement = document.getElementById('answer-clicks');
 
 const quizWordElement = document.getElementById('question');
 
-let shuffledWords, currentWord;
+const modalMessageElement = document.getElementById('wellDoneMessage');
+
+//modal//
+const modal = document.getElementById("myModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+let shuffleQWords, currentWord;
+
+let correctAnswerCounter = 0;
 
 readyBtn.addEventListener('click', startGame);
 
 nextFrame.addEventListener('click', () => {
-  currentWord++
   setNextWord()
 });
 
@@ -26,6 +35,7 @@ function startGame() {
 }
 
 function setNextWord() {
+  currentWord++
   resetState();
   showQuestion(shuffleQWords[currentWord]);
 }
@@ -56,13 +66,19 @@ function resetState() {
 function clickBtn(e) {
   const selectedButton = e.target;
   const correct = selectedButton.dataset.correct;
+  
+  if (correct) correctAnswerCounter ++;
+
   setStatusClass(document.body, correct);
   Array.from(answersElement.children).forEach(button => {
     setStatusClass(button, button.dataset.correct);
   })
-  if (shuffleQWords.length > currentWord + 1) {
+  if (currentWord < shuffleQWords.length-1) {
     nextFrame.classList.remove('hide');
   } else {
+    modal.style.display = "block";
+    modalMessageElement.innerText = 'You got ' + correctAnswerCounter +' correct out of '+shuffleQWords.length+' :)';
+
     readyBtn.innerText = 'Well done! Click here to go again :)';
     readyBtn.classList.remove('hide');
   }
