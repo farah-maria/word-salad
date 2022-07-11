@@ -98,6 +98,37 @@ function clearStatusClass(element) {
   element.classList.remove('wrong');
 }
 
+function getWordType(strWordType){
+  return questions.filter((question)=>{
+    return question.answers.filter((ans)=>{
+      return (ans.text === strWordType && ans.correct === true)
+    }).length > 0;
+  });
+}
+
+function getNouns(){
+  return getWordType('noun');
+}
+
+function getVerbs(){
+  return getWordType('verb');
+}
+
+function getAdverbs(){
+  return getWordType('adverb');
+}
+
+function getAdjectives(){
+  return getWordType('adjective');
+}
+
+function getRandomWord(arrWords){
+  return arrWords[Math.random(arrWords.length).floor]
+}
+function generateRandomSentence(){
+  return "The " + getRandomWord(getAdjectives()) + " " + getRandomWord(getNouns()) + " " + getRandomWord(getVerbs()) + " to the s&m club " + getRandomWord(getAdverbs());
+}
+
 const questions = [
   {
     question: 'apple',
