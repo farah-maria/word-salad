@@ -63,7 +63,7 @@ function clickBtn(e) {
   if (shuffleQWords.length > currentWord + 1) {
     nextFrame.classList.remove('hide');
   } else {
-    readyBtn.innerText = 'Restart';
+    readyBtn.innerText = 'Well done! Click here to go again :)';
     readyBtn.classList.remove('hide');
   }
 }
