@@ -78,9 +78,15 @@ function clickBtn(e) {
   } else {
     modal.style.display = "block";
     modalMessageElement.innerText = 'You got ' + correctAnswerCounter +' correct out of '+shuffleQWords.length+' :)';
+    document.getElementById('randomSentence').innerText = generateRandomSentence();
 
     readyBtn.innerText = 'Well done! Click here to go again :)';
     readyBtn.classList.remove('hide');
+
+    document.getElementById('modal-close-button').addEventListener('click', ()=>{
+      modal.style.display = 'none';
+    });
+
   }
 }
 
@@ -123,7 +129,7 @@ function getAdjectives(){
 }
 
 function getRandomWord(arrWords){
-  return arrWords[Math.random(arrWords.length).floor]
+  return arrWords[Math.floor((Math.random() * arrWords.length))].question
 }
 function generateRandomSentence(){
   return "The " + getRandomWord(getAdjectives()) + " " + getRandomWord(getNouns()) + " " + getRandomWord(getVerbs()) + " to the s&m club " + getRandomWord(getAdverbs());
