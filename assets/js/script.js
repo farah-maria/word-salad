@@ -77,7 +77,7 @@ function clickBtn(e) {
     nextFrame.classList.remove('hide');
   } else {
     modal.style.display = "block";
-    modalMessageElement.innerText = 'You got ' + correctAnswerCounter +' correct out of '+shuffleQWords.length+' :)';
+    modalMessageElement.innerText = 'You got ' + correctAnswerCounter +' correct out of '+shuffleQWords.length+' :)' + ' Your prize is a silly, wordsalad sentence. See if you can write ones of your own with the same adjective, noun, verb and adverb.';
     document.getElementById('randomSentence').innerText = generateRandomSentence();
 
     readyBtn.innerText = 'Well done! Click here to go again :)';
@@ -132,7 +132,7 @@ function getRandomWord(arrWords){
   return arrWords[Math.floor((Math.random() * arrWords.length))].question
 }
 function generateRandomSentence(){
-  return "The " + getRandomWord(getAdjectives()) + " " + getRandomWord(getNouns()) + " " + getRandomWord(getVerbs()) + " to the s&m club " + getRandomWord(getAdverbs());
+  return "The " + getRandomWord(getAdjectives()) + " " + getRandomWord(getNouns()) + " " + getRandomWord(getVerbs()) + " to the shop " + getRandomWord(getAdverbs()) + ".";
 }
 
 const questions = [
