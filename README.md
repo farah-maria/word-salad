@@ -4,15 +4,13 @@ Word Salad a fun and colourful grammar themed quiz aimed at kids who need to pra
 At the end of the quiz, the user is congratulated on completing, regardless on their score, and is presented with a “silly word-salad sentence” that is generated using the words they have been working with. They are prompted to write some silly sentences of their own using the same key words and are encouraged to play the quiz again. Each time the quiz is played, a different silly sentence is generated.
 
 
-![mock-up of site on different sized devices](assets/images/amiresponsive.png)
+![mock-up of site on different sized devices](assets/images/amiresponsive.jpg)
 
 ## **User Experience, Scope & Design**
 
-Accessibility is an important part of this project, not only it is central to how this particular work is being assessed but because, as mentioned above, this is a site aimed at a non-specialist audience aged 13 years and up. Young readers need content that is easier to understand and navigate, as do those who may not describe themselves as “tech-savvy”.
-Simple language is used throughout the site for this reason, and the inclusion of images and media links keeps the content varied, engaging and educational for those who want to explore more about the female coders introduced on the timeline.
-A timeline format was used as this lay-out is simple to follow, carrying the reader from the 1840s to the current day. Entries that describe female coders through history are short and concise, aimed at the concentration levels of a young audience or an adult scrolling through the internet in their coffee break. 
+In terms of the scope of the project, I decided to focus on just four word-classes. Not only did this mean there were only four possible answers repeated for each question, making it easy to style the answer buttons for just those particular words, but it meant that - given the timeline for project submission (I had two weeks) - I could make sure that these four concepts were fully explored in the quiz, giving the user plenty of practice to consolidate their knowledge. This seemed a far better option in terms of creating a fit-for-purpose real-world functioning educational tool. Otherwise, I might have been more ambitious in my scope but ended up with a quiz frustrating for the child user. Children do need a sense of positive achievement and progress in their educational activities, or else they can become discouraged after having a negative experience and subsequently decide they just don’t like “that awful, boring” subject anymore (in this case, grammar, which is a dry enough subject area to start with).
 
-The homepage and feedback form are therefore minimalist, with little content, and get straight to the point. The focus is clear – the timeline. But the landing page is also attractive in a “soft” way that is pleasing to the eye, and as discussed in the introduction, uses a gentle palette of colours that puts the audience at ease. 
+Because grammar can be a dull subject, I gave the quiz a colourful background with a colour scheme based on the primary colours blue, green, yellow and red. This was suitable as it reflected the four possible answers/ word-classes of noun, verb, adverb and adjective, and also made the screen look playful and fun.  
 
 <br>
 <center>Desktop version of homepage with 'hover' colour on 'home' along the navigation bar.<br><br><img src="assets/images/homepage-desk.jpg" alt="screenshot of homepage for desktop" width="60%"/></center>
