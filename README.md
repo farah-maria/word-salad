@@ -27,7 +27,7 @@ I wanted a simple structure to the quiz right from the beginning, when I hand-dr
 <br>
 <center>1. <img src="assets/images/framesOneTwo.jpg" alt="wireframe drawing for homepage and 'ready?' page" width="30%"/></center>
 <br>
-<center>2. <img src="assets/images/framesThr_Five.jpg" alt="wireframe drawings of question and answer pages of quiz" width="30%"/></center>     
+<center>2. <img src="assets/images/framesThr_Five.jpg" alt="wireframe drawings of question and answer pages of quiz" width="45%"/></center>     
 <br>
 <center>3. <img src="assets/images/frameLast.jpg" alt="wireframe drawing of last page, where user is presented with a 'word-salad' silly sentence" width="30%"/></center>
 <br>     
@@ -46,18 +46,20 @@ When it came to the fonts, I used "Butterfly Kids" from Google Fonts for the qui
 
 
 
-## Design Responsivity, User Experience & Scope/ Strategy
+## Design Responsivity in Relation to User Experience, Scope & Strategy
 
-Design responsivity for different devices is essential for positive user experiences. According to a recent article  by the online magazine Design Rush (15 Screen Resolutions to Design For | DesignRush), 90% of website visitors bounce due to poor design. So, after creating an elaborate desktop design for the homepage (which didn’t work on smaller screens) I decided to start again from scratch with a mobile first approach, with the awareness that a majority of website visits in general happen via smart phone. 
+Design responsivity for different devices is essential for positive user experiences. According to a recent article  by the online magazine Design Rush (15 Screen Resolutions to Design For | DesignRush), 90% of website visitors bounce due to poor design, and I've seen first-hand how often parents hand their children an iphone to play games with to keep them quiet and entertained in public. I therefore took a mobile-first approach when designing and coding the project. The set-up of boxes and containers for questions and answers made it relatively easy to make the pages into a responsive grid. I did make sure the quiz looks nice on larger screens, too, as I'd like the quiz to be used educationally in homes and schools, where a desktop computer or tablet is more likely to be used for learning activities. 
 
-Accessibility is an important part of my website, as it is partly aimed at a non-tech-savvy audience who are less likely to have elaborate, expensive devices for viewing web pages. A young audience – especially the school student community - is also less likely to have the funds, as they do not control their own budget or income. So, I researched the most common screen sizes and set my scope for design responsivity around these. According to the Design Rush article already mentioned, which is based on statistics from StatCounter, the most common screen sizes for mobile phone are somewhere between 320 and 667 pixels wide and between 480 and 812 pixels tall. I tested the design of my site and created media queries with a focus on this in terms of mobile phone devices. However, these parameters only accounted for 45% of web surfers between March 2019 and March 2020, and there are now even more mobile phone sizes in use. Mobile phones clearly account for the most varied and unpredictable screen sizes in use, and so I did make sure that my media queries included sizes above and beyond the parameters discussed in Design Rush magazine…
-The website is fully responsive from the smallest screen size of an iPhone 4.  Foldables and wearables were not included in the scope for the above reasons (they are less commonly used and RE associated with people with a higher level of tech-awareness and appreciation). 
 
-According to research (the same article), tablet sizes and desktop sizes (including laptops) are far more predictable, in terms of assessing what most people use, so I strongly focused on the most common screen sizes for these types of devices when it came to testing my site using Chrome dev tools and creating specific media queries targeting these screen sizes.
+I made sure there was strong contrast between content and the background - the pastel-coloured spots in the background are distinctive but not too loud or distracting. I aimed to make the quiz look clean-cut, simple and fun. 
 
-The five most common desktop screen resolutions worldwide are: 1366 x 768px; 1536 x 864px; 1440 x 900px; 1920 x 1090px and 1280 x 720px. This includes laptops, and these screen-size users accounted for 63% of web surfing. While including media queries and dev testing for other screen sizes, I strongly focused on these. The site is optimised to look good and be accessible when it comes to how content is presented on these screen sizes. Strong contrast between content and background (colours, fonts, information boxes), and making sure the screen is not too "busy", have been priorities for these sized screens.
+The logo from the quiz pages is in the same style as the 'Word-Salad' title on the homepage, with the same icon of a leaf. The concept is clear - a 'W' for word and a green leaf for 'salad'. I used this as the favicon, too, so there is consistency in the design across the different sections of the quiz.
 
-Tablets are even more predictable/ standard in size. The 5 most common tablet sizes used to surf the net between March 2019 and March 2020, according to StatCounter, were 1024 x 768px; 1280 x 800px, 800 x 1280px (the same device in portrait); 962 x 601px and 601 x 962px (the same device in portrait). This accounted for 70% of tablet users. While including media queries and doing dev testing for other dimensions, I strongly focused on these. The site is optimised to look good and be accessible when it comes to how content is presented on these screen sizes. Strong contrast between content and background (colours, fonts, information boxes), and making sure the screen is not too "busy", have been priorities for these sized screens
+The navigation buttons have icons on them and are repeated on each page of the quiz, allowing the user to go back to the homepage or go to the next question. These icons were taken from Font Awesome and can be seen below.
+
+The 'well done' button and modal at the end of the quiz give the user a clear and unambiguous sign that they have completed the quiz, but can play again if they want to. There is a button to restart the quiz.
+
+The navigation journey is clear throughout, and the design consistent. Given more time, I would have written more media queries to make the quiz more attractive on all screen sizes. However, with the emphasis in this project being less on the media queries and more on the vanilla JavaScript code, I mainly made sure that the quiz is playable, pleasant, functioning and clear on different screen sizes, rather than really trying to make it look fantastic on any screen. If I got to extend the scope of the project with an extra few days to work on responsivity, I would have.
 
 ## Existing Features
 
