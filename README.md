@@ -50,7 +50,6 @@ When it came to the fonts, I used "Butterfly Kids" from Google Fonts for the qui
 
 Design responsivity for different devices is essential for positive user experiences. According to a recent article  by the online magazine Design Rush (15 Screen Resolutions to Design For | DesignRush), 90% of website visitors bounce due to poor design, and I've seen first-hand how often parents hand their children an iphone to play games with to keep them quiet and entertained in public. I therefore took a mobile-first approach when designing and coding the project. The set-up of boxes and containers for questions and answers made it relatively easy to make the pages into a responsive grid. I did make sure the quiz looks nice on larger screens, too, as I'd like the quiz to be used educationally in homes and schools, where a desktop computer or tablet is more likely to be used for learning activities. 
 
-
 I made sure there was strong contrast between content and the background - the pastel-coloured spots in the background are distinctive but not too loud or distracting. I aimed to make the quiz look clean-cut, simple and fun. 
 
 The logo from the quiz pages is in the same style as the 'Word-Salad' title on the homepage, with the same icon of a leaf. The concept is clear - a 'W' for word and a green leaf for 'salad'. I used this as the favicon, too, so there is consistency in the design across the different sections of the quiz.
@@ -59,7 +58,9 @@ The navigation buttons have icons on them and are repeated on each page of the q
 
 The 'well done' button and modal at the end of the quiz give the user a clear and unambiguous sign that they have completed the quiz, but can play again if they want to. There is a button to restart the quiz.
 
-The navigation journey is clear throughout, and the design consistent. Given more time, I would have written more media queries to make the quiz more attractive on all screen sizes. However, with the emphasis in this project being less on the media queries and more on the vanilla JavaScript code, I mainly made sure that the quiz is playable, pleasant, functioning and clear on different screen sizes, rather than really trying to make it look fantastic on any screen. If I got to extend the scope of the project with an extra few days to work on responsivity, I would have.
+The navigation journey is clear throughout, and the design consistent, with the same background image being used and the same coloured boxes and borders. The background image is suggestive of children's creativity and work, as it shows watercolour painted dots that could have been made by young person. 
+
+Given more time, I would have written more media queries to make the quiz more attractive on all screen sizes. However, with the emphasis in this project being less on the media queries and more on the vanilla JavaScript code, I mainly made sure that the quiz is playable, pleasant, functioning and clear on different screen sizes, rather than really trying to make it look fantastic on any screen. If I got to extend the scope of the project with an extra few days to work on responsivity, I would have.
 
 ## Existing Features
 
@@ -69,39 +70,21 @@ It is hard to completely separate the topics that need attention in this documen
 
 The homepage states the purpose and nature of the quiz in the first paragraph, and also describes the final outcome, which is a silly sentence and a prompt for the user to create their own silly sentences. There is a central link (styled as a button) that takes the user straight to the quiz if they do not need to be reminded of the four word-classes. 
 
+The child-oriented background image is introduced here, and is used throughout the game. 
 
--
-<br>
-<center>Homepage <br><img src="assets/images/homenav.png" alt="screenshot of homepage header with navigation bar" width="50%"/></center>
-<br>
-<center>Timeline page <br><img src="assets/images/timelinenav.png" alt="screenshot of navigation bar on history page" width="50%"/></center>     
-<br>
-<center>Feedback page <br><img src="assets/images/formnav.png" alt="screenshot of navigation bar on feedback page" width="50%"/></center>
+There is a hover/ pointer effect on the 'start quiz' button.
+
+-_ 'Ready?' Page_
+
+This was added purely for extra interactivity. The whole focus of the page is the 'Ready?' button, which takes the user to the quiz questions. 
+
+This page introduces the logo, which stays in the top left-hand centre of all the quiz pages. The same image (shown below) is also used as the favicon.
+
+center><img src="assets/images/logo.png" alt="word-salad logo" width="30%"/></center>
 <br>     
 
-The style and font is the same for each of the three navigation bars, except on small mobile devices where a border and background colour were added for the feedback page to improve visibility of the navigation options (the form necessitated a smaller font-size). The colours used are still from the same colour palette. I kept the header and navigation identical for the first two pages of the mobile version, with the understanding that a smaller screen gives less visual clues, making consistency in design even more important.
+I am aware that it is a bit too small to be distinctive as a favicon, and I would work on having a clearer favicon if I had the opportinity to work on the project again.
 
-Home & history pages, mobile screenshot:
-
-<center><img src="assets/images/mobhistorynav.jpg" alt="screenshot on Huawei P30 lite phone of navigation bar on history page" width="30%"/></center>     
-<br>
-Feedback page, mobile screenshot:
-
-<br>
-<center><img src="assets/images/mobformnav.png" alt="screenshot of nav bar on feedback page using Chrome dev tools to create dimensions for iphone4" width="30%"/></center>
-<br>     
- 
-The top screenshot was taken on my Huawei P30 lite phone. The second is on the dimensions of an iPhone 4, created using Chrome dev tools. 
-
-There is a hover effect for the options on the navbars, to help the user see that the labels on the header are interactive and 'clickable', and also a colour effect to show if the page has already been visited. This is to help the reader understand the functionality of the navigation bar and to remind them of what they have already viewed, creating a clear sense of where they are on their journey through the site.
-
--_Footer with Social Media Links_-
-
-The same footer design is used on all three pages with a hover effect to indicate interactivity. There are three icons for Facebook, Twitter and YouTube taken from the Font Awesome library. As with the navigation bar on the mobile version of the site, the feedback page has a border around the icons so that they clearly stand out on a small screen. The style and colour of the border is the same. Tablets also have a slightly tweaked design for the footer, which is a compromise between the full-size design for large desktops and the boxed footer for mobiles. It consists of the same background illustration that's used for desktops, but with the addition of a grey border to draw emphasis to the links on a smaller screen. The links on the footer do work, but I have yet to set up a social media presence for the WICH project. 
-
--_Landing Page & WICH Logo_-
-
-As shown at the start of this document, the landing page, or homepage, is simple, minimalist but informative, with a natural and gentle colour palette. The words 'Women coders since the 1840...' informs the user of the content they should expect from the next page. The navigation label 'timeline' at the top of the page also introduces how this information is going to be presented. The hero image of a keyboard on a pink desk is attractive as well as functional in conveying the main themes of women at work in computer technology and coding. 
 
 The icon used for the logo is from the Font Awesome library [Font Awesome website](fontawesome.com) and clearly indicates the subject matter of computing, while the shades of pink on the home page are a wry reference to what is stereotypically thought of as 'feminine taste'. The logo and title heading are repeated on all three pages.
 
