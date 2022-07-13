@@ -291,7 +291,7 @@ const questions = [
     ]
   },
   {
-    question: 'walk',
+    question: 'walks',
     answers: [
       { text: 'noun', correct: false },
       { text: 'adjective', correct: false },
