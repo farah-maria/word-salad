@@ -1,16 +1,15 @@
+//PART 1. VARIABLES & FUNCTIONS FOR MAKING THE QUIZ WORK. (Actual quiz questions and answers are set in part 2, from line 147)//
+
+//Setting main variables for quiz. I watched Web Dev Simplified on YouTube to guide me - https://www.youtube.com/watch?v=riDzcEQbX6k//
 const readyBtn = document.getElementById('ready-btn');
-
 const nextFrame = document.getElementById('next-frame');
-
 const quizContainerElement = document.getElementById('quiz-container');
-
 const answersElement = document.getElementById('answer-clicks');
-
 const quizWordElement = document.getElementById('question');
 
-const modalMessageElement = document.getElementById('wellDoneMessage');
 
-//modal//
+//Modal. I read the W3 Schools info on how to make a modal box with JS and CSS - https://www.w3schools.com/howto/howto_css_modals.asp //
+const modalMessageElement = document.getElementById('wellDoneMessage');
 const modal = document.getElementById("myModal");
 
 // Get the <span> element that closes the modal
@@ -20,12 +19,14 @@ let shuffleQWords, currentWord;
 
 let correctAnswerCounter = 0;
 
-readyBtn.addEventListener('click', startGame);
+// setting listeners to start the game when user presses "Ready?" button at start of quiz//
+readyBtn.addEventListener('click', startGame)
 
 nextFrame.addEventListener('click', () => {
-  setNextWord()
+  setNextWord();
 });
 
+//start game//
 function startGame() {
   readyBtn.classList.add('hide');
   shuffleQWords = questions.sort(() => Math.random() - .5);
@@ -34,8 +35,10 @@ function startGame() {
   setNextWord();
 }
 
+//shuffle and show the next question in the quiz each time, hiding the previous question and answers//
+
 function setNextWord() {
-  currentWord++
+  currentWord++;
   resetState();
   showQuestion(shuffleQWords[currentWord]);
 }
@@ -52,7 +55,7 @@ function showQuestion(question) {
 
     button.addEventListener('click', clickBtn);
     answersElement.appendChild(button);
-  })
+  });
 }
 
 function resetState() {
@@ -63,6 +66,7 @@ function resetState() {
   }
 }
 
+//incrementing score from questions answered correctly//
 function clickBtn(e) {
   const selectedButton = e.target;
   const correct = selectedButton.dataset.correct;
@@ -72,24 +76,26 @@ function clickBtn(e) {
   setStatusClass(document.body, correct);
   Array.from(answersElement.children).forEach(button => {
     setStatusClass(button, button.dataset.correct);
-  })
+  });
   if (currentWord < shuffleQWords.length-1) {
     nextFrame.classList.remove('hide');
   } else {
     modal.style.display = "block";
-    modalMessageElement.innerText = 'You got ' + correctAnswerCounter +' correct out of '+shuffleQWords.length+' :)' + ' Your prize is a silly, wordsalad sentence. See if you can write ones of your own with the same adjective, noun, verb and adverb.';
+    //show user their score and a message in a pop-up modal text-box//
+    modalMessageElement.innerText = 'You got ' + correctAnswerCounter +' correct out of '+shuffleQWords.length+' :)' + 
+    ' Your prize is a silly word-salad sentence. See if you can write ones of your own with the same adjective, noun, verb and adverb.';
     document.getElementById('randomSentence').innerText = generateRandomSentence();
-
+    //button on quiz offering option to start again//
     readyBtn.innerText = 'Well done! Click here to go again :)';
     readyBtn.classList.remove('hide');
-
+    //closing the modal//
     document.getElementById('modal-close-button').addEventListener('click', ()=>{
       modal.style.display = 'none';
     });
 
   }
 }
-
+//gathering data for the 'word-salad' silly random question//
 function setStatusClass(element, correct) {
   clearStatusClass(element);
   if (correct) {
@@ -107,11 +113,12 @@ function clearStatusClass(element) {
 function getWordType(strWordType){
   return questions.filter((question)=>{
     return question.answers.filter((ans)=>{
-      return (ans.text === strWordType && ans.correct === true)
+      return (ans.text === strWordType && ans.correct === true);
     }).length > 0;
   });
 }
 
+//finding, categorising and gathering word-types - eg, noun, adverb, verb, adjective - for the random sentence generated at end of quiz//
 function getNouns(){
   return getWordType('noun');
 }
@@ -129,15 +136,13 @@ function getAdjectives(){
 }
 
 function getRandomWord(arrWords){
-  return arrWords[Math.floor((Math.random() * arrWords.length))].question
+  return arrWords[Math.floor((Math.random() * arrWords.length))].question;
 }
 function generateRandomSentence(){
-<<<<<<< HEAD
   return "The " + getRandomWord(getAdjectives()) + " " + getRandomWord(getNouns()) + " " + getRandomWord(getVerbs()) + " to the shop " + getRandomWord(getAdverbs()) + ".";
-=======
-  return "The " + getRandomWord(getAdjectives()) + " " + getRandomWord(getNouns()) + " " + getRandomWord(getVerbs()) + " to the s&m club " + getRandomWord(getAdverbs()) + " and they all disapoofed into the pleasure pain realm.");
->>>>>>> 18b2cd60b59217458eca8e1fdacb86469716f3dd
 }
+
+//PART 2: TWENTY QUIZ QUESTIONS WITH ANSWER OPTIONS OFFERED TO USER://
 
 const questions = [
   {
@@ -159,7 +164,7 @@ const questions = [
     ]
   },
   {
-    question: 'rolled',
+    question: 'rolls',
     answers: [
       { text: 'noun', correct: false },
       { text: 'adjective', correct: false },
@@ -169,7 +174,7 @@ const questions = [
     ]
   },
   {
-    question: 'dance',
+    question: 'dances',
     answers: [
       { text: 'noun', correct: false },
       { text: 'adjective', correct: false },
@@ -199,7 +204,7 @@ const questions = [
     ]
   },
   {
-    question: 'limp',
+    question: 'limps',
     answers: [
       { text: 'noun', correct: false },
       { text: 'adjective', correct: false },
@@ -219,7 +224,7 @@ const questions = [
     ]
   },
   {
-    question: 'sleep',
+    question: 'sleeps',
     answers: [
       { text: 'noun', correct: false },
       { text: 'adjective', correct: false },
@@ -311,5 +316,25 @@ const questions = [
       { text: 'verb', correct: false },
       { text: 'adverb', correct: true }
     ]
+  },
+  {
+    question: 'boy',
+    answers: [
+      { text: 'adjective', correct: false },
+      { text: 'noun', correct: true },
+      { text: 'verb', correct: false },
+      { text: 'adverb', correct: false }
+    ]
+  },
+  {
+    question: 'girl',
+    answers: [
+      { text: 'adjective', correct: false },
+      { text: 'noun', correct: true },
+      { text: 'verb', correct: false },
+      { text: 'adverb', correct: false }
+    ]
   }
-]
+];
+
+//END//
