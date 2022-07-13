@@ -26,7 +26,7 @@ nextFrame.addEventListener('click', () => {
 //start game//
 function startGame() {
   readyBtn.classList.add('hide');
-  shuffleQWords = questions.sort(() => Math.random() - .5);
+  shuffleQWords = questions.sort(() => Math.random() - 0.5);
   currentWord = 0 ;
   quizContainerElement.classList.remove('hide');
   setNextWord();
