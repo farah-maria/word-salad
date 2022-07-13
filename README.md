@@ -65,10 +65,12 @@ The navigation journey is clear throughout, and the design consistent. Given mor
 
 It is hard to completely separate the topics that need attention in this document, so there is some overlap, but I will avoid repeating descriptions.
 
--_Navigation Bar_
+-_Homepage_
 
-As suggested above, in the section on user experience and design, the header and navigation bar are on all three pages of the website. The navigation bar is part of the header and is fully responsive, containing links to the homepage, the history timeline and the feedback form. At no point does the user need to hit the ‘back’ button to access a page they were on previously, as each available option is clearly displayed in the same area of each page and is easily ‘clickable’. This is true regardless of whether the site is being accessed via mobile, tablet, laptop of desktop. I have tried to balance creativity with consistency. As the site focuses on new discoveries and breakthroughs made by innovative women, I wanted to avoid translating consistency as “sameness”, while recognizing that the user needs to know where they are on the navigation journey. Consistency is important, especially for the visually impaired, so they have a clear sense that they are on the same website even if they are on a different page. Here are the three headers, containing the nav bards, with the same main title and logo on each page...
+The homepage states the purpose and nature of the quiz in the first paragraph, and also describes the final outcome, which is a silly sentence and a prompt for the user to create their own silly sentences. There is a central link (styled as a button) that takes the user straight to the quiz if they do not need to be reminded of the four word-classes. 
 
+
+-
 <br>
 <center>Homepage <br><img src="assets/images/homenav.png" alt="screenshot of homepage header with navigation bar" width="50%"/></center>
 <br>
