@@ -156,6 +156,7 @@ margin-top: -60vh;
 #go_to_quiz:hover {
     text-decoration: underline solid 3px green;
     border: teal solid;
+    cursor: pointer;
 }
 .ready .next-frame {
   font-size: 300%;

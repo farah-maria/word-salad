@@ -16,12 +16,7 @@ Because grammar can be a dull subject, I gave the quiz a colourful background wi
 <center>Desktop version of homepage.<br><br><img src="assets/images/homePg.jpg" alt="screenshot of homepage for desktop" width="60%"/></center>
 <br>
 
-The imagery of nature and trees is used subtly throughout for the headings and footers, as nature generally helps people to relax. The imagery of trees also feeds into the idea of growth – personal growth through learning and evolution through time. Family trees are used to illustrate the growth of a family through many years, and the idea of using tree-imagery on a history site came from this usage.
-
-The site is not aimed at very young primary school aged children, where the use of bright colours and busy content would have been more appropriate. However, I used to be a Montessori teacher, and the site would be suitable for some elementary school aged children in such an educational setting (where over-busy decoration is discouraged, and natural colours are used more often).
-The colour palette of lilacs, blues, greens and soft brown is meant to reflect nature through use of the colours of flowers, grass, sky and trees. The surface level of the website is therefore entirely designed to put the eye, and the audience, at ease and to let the reader feel gently invited to the content.
-
-Simplicity is at the heart of the basic navigation structure: a homepage that introduces the subject area and content of the site in one line, and just two other navigation options… The timeline and a feedback page. Consistency of design is used throughout the site, in terms of the headers and footers and the location of these features. The site is easy and simple to follow. This was a priority right from the onset of designing the site, when I hand-drew my wireframes...
+As the qiuSimplicity is at the heart of the basic navigation structure: a homepage that introduces the subject area and content of the site in one line, and just two other navigation options… The timeline and a feedback page. Consistency of design is used throughout the site, in terms of the headers and footers and the location of these features. The site is easy and simple to follow. This was a priority right from the onset of designing the site, when I hand-drew my wireframes...
 
 <br>
 <center>1. <img src="assets/images/frame-one.jpg" alt="wireframe drawing for homepage" width="30%"/></center>
