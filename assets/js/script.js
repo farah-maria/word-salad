@@ -132,7 +132,11 @@ function getRandomWord(arrWords){
   return arrWords[Math.floor((Math.random() * arrWords.length))].question
 }
 function generateRandomSentence(){
+<<<<<<< HEAD
   return "The " + getRandomWord(getAdjectives()) + " " + getRandomWord(getNouns()) + " " + getRandomWord(getVerbs()) + " to the shop " + getRandomWord(getAdverbs()) + ".";
+=======
+  return "The " + getRandomWord(getAdjectives()) + " " + getRandomWord(getNouns()) + " " + getRandomWord(getVerbs()) + " to the s&m club " + getRandomWord(getAdverbs()) + " and they all disapoofed into the pleasure pain realm.");
+>>>>>>> 18b2cd60b59217458eca8e1fdacb86469716f3dd
 }
 
 const questions = [
