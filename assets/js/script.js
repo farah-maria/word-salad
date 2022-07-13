@@ -12,15 +12,12 @@ const quizWordElement = document.getElementById('question');
 const modalMessageElement = document.getElementById('wellDoneMessage');
 const modal = document.getElementById("myModal");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
 let shuffleQWords, currentWord;
 
 let correctAnswerCounter = 0;
 
 // setting listeners to start the game when user presses "Ready?" button at start of quiz//
-readyBtn.addEventListener('click', startGame)
+readyBtn.addEventListener('click', startGame);
 
 nextFrame.addEventListener('click', () => {
   setNextWord();
