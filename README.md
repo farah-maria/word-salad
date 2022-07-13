@@ -6,7 +6,7 @@ At the end of the quiz, the user is congratulated on completing, regardless on t
 
 ![mock-up of site on different sized devices](assets/images/amiresponsive.jpg)
 
-## **User Experience, Scope & Design**
+## **Project Scope, Design & User Experience**
 
 In terms of the scope of the project, I decided to focus on just four word-classes. Not only did this mean there were only four possible answers repeated for each question, making it easy to style the answer buttons for just those particular words, but it meant that - given the timeline for project submission (I had two weeks) - I could make sure that these four concepts were fully explored in the quiz, giving the user plenty of practice to consolidate their knowledge. This seemed a far better option in terms of creating a fit-for-purpose real-world functioning educational tool. Otherwise, I might have been more ambitious in my scope but ended up with a quiz frustrating for the child user. Children do need a sense of positive achievement and progress in their educational activities, or else they can become discouraged after having a negative experience and subsequently decide they just don’t like “that awful, boring” subject anymore (in this case, grammar, which is a dry enough subject area to start with).
 
@@ -22,31 +22,29 @@ The red, technically, is substituted for a dark pink. I recall from my teacher t
 
 Clear navigation, consistency in design and accessibility were important in the creation of the quiz. The homepage defines the word-classes with an example sentence, and a nice big button in the middle of the text-area can be pressed to start the quiz. It actually says ‘click here to start the quiz’ on it, and the button has a hover effect making it easier for a younger user with less practiced coordination to know when they have the pointer in the right place before ‘clicking’. The hover effect is quite clear (a change in border colour and an underline) to make the navigation journey clear for children.
 
-
-
- As the qiuSimplicity is at the heart of the basic navigation structure: a homepage that introduces the subject area and content of the site in one line, and just two other navigation options… The timeline and a feedback page. Consistency of design is used throughout the site, in terms of the headers and footers and the location of these features. The site is easy and simple to follow. This was a priority right from the onset of designing the site, when I hand-drew my wireframes...
+I wanted a simple structure to the quiz right from the beginning, when I hand-drew my wireframes...
 
 <br>
-<center>1. <img src="assets/images/frame-one.jpg" alt="wireframe drawing for homepage" width="30%"/></center>
+<center>1. <img src="assets/images/framesOneTwo.jpg" alt="wireframe drawing for homepage and 'ready?' page" width="30%"/></center>
 <br>
-<center>2. <img src="assets/images/frame-two.jpg" alt="wireframe drawing of timeline page in landscape" width="30%"/></center>     
+<center>2. <img src="assets/images/framesThr_Five.jpg" alt="wireframe drawings of question and answer pages of quiz" width="30%"/></center>     
 <br>
-<center>3. <img src="assets/images/frame-two-scrollview.jpg" alt="wireframe drawing of timeline page in portrait with scrolling view" width="25%"/></center>
+<center>3. <img src="assets/images/frameLast.jpg" alt="wireframe drawing of last page, where user is presented with a 'word-salad' silly sentence" width="30%"/></center>
 <br>     
-<center>4. <img src="assets/images/frame-three.jpg" alt="wireframe drawing of feedback page" width="30%"/></center>
-<br>
-<center>5. <img src="assets/images/frame-four.jpg" alt="wireframe drawing of landing page that says thank for submitting your form "width="30%"/></center>
-<br>
 
-Image one  is the homepage, images two and three are of the timeline, image four is the feedback page and image five is a 'thank you' page that pops up to confirm successful submission of the form.
+Image one  is the homepage that explains the word-classes and the second wirefram on it represents the 'ready?' page, which builds up a bit of fun tension before the quiz starts and adds some extra interactivity and involvement, as the user has a button to press to 'agree'. The actual 'ready' page is shown below:
 
-A few minor aspects of design changed after the wireframing process. The hero image, for example, contains a lot of empty space in the middle, so it was better suited as a background image with what I called the 'blurb' going across the centre rather than underneath. I asked a friend to open the homepage on his computer with a large desktop, and he found that it was still very empty-looking after this change in design, so I veered away from my choice of the courier font (which evokes a historical sense of "typing" code using an old machine) for larger desktops. A more attractive, decorative font was employed just for bigger screens to address this issue. I chose "Homemade Apple" from Google Fonts as this worked well with the handwritten-style header (the font used for the header is "Permanent Marker", also from Google Fonts) in suggesting a first draft of history that's still being written. It also softens the page, giving a more homely feel, helping the user feel they are in their comfort zone despite being taught about a technical subject.
+<center><img src="assets/images/readyPg.jpg" alt="wireframe drawing of last page, where user is presented with a 'word-salad' silly sentence" width="30%"/></center>
+<br>     
 
-The combination of "Open Sans" (also from Google Fonts) for small text on the site with "Permanent Marker" for the header is a pairing suggested by Canva [Canva website](canva.com/learn/best-google-font-combinations).
 
-The 'thank you' page that I planned, as confirmation to the user that their feedback form had been successfully submitted, fell away as the scope of the project became more limited given the time constraints. This is something I would like to add later. Instead, there is a standard Code Institute "form dump" confirmation message that pops us after data is successfully sent. 
+Images two of the wireframing shows the multiple-choice questions and answers section, and image three of the wireframing process shows the final page with the word-salad sentence generated from the words the user has been working with.
 
-I wanted to include links to the educational curricula in Ireland and the UK for teachers using the site for class, ideally during the week of international women's day, but I decided early on in the wireframing process that the scope would have to exclude this due to time constraints. This can be added as the website develops, along with an easily-printable format for the timeline, so that the history page can be used as a hand-out for students. I kept the scope quite basic, with space for additional content. The focus is on simply informing the user of the history of women in coding... A basic but attractive educational site that is also suitable for general interest.
+A few minor aspects of design changed after the wireframing process, mainly to make the navigation both clearer and more interesting. The final wireframe ended up as a brightly coloured modal that pops up and congratulates the user on completing the quiz, as well as generating the word-salad sentence. I'll discuss this further under 'features'.
+
+When it came to the fonts, I used "Butterfly Kids" from Google Fonts for the quiz heading and logo, as it's playful and silly, which suits the final word-salad concept of making silly sentences. I used 'Poppins' from the same source for regular text on the site, which was a pairing that fitted visually - both fonts are from the 'butterfly kids' font-family - with the advantage of Poppins being both clear and bold enough for younger readers to be able to decipher with relative ease. 
+
+
 
 ## Design Responsivity, User Experience & Scope/ Strategy
 
