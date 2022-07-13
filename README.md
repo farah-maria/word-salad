@@ -25,11 +25,11 @@ Clear navigation, consistency in design and accessibility were important in the 
 I wanted a simple structure to the quiz right from the beginning, when I hand-drew my wireframes...
 
 <br>
-<center>1. <img src="assets/images/framesOneTwo.jpg" alt="wireframe drawing for homepage and 'ready?' page" width="30%"/></center>
+<center><img src="assets/images/framesOneTwo.jpg" alt="wireframe drawing for homepage and 'ready?' page" width="30%"/></center>
 <br>
-<center>2. <img src="assets/images/framesThr_Five.jpg" alt="wireframe drawings of question and answer pages of quiz" width="45%"/></center>     
+<center><img src="assets/images/framesThr_Five.jpg" alt="wireframe drawings of question and answer pages of quiz" width="45%"/></center>     
 <br>
-<center>3. <img src="assets/images/frameLast.jpg" alt="wireframe drawing of last page, where user is presented with a 'word-salad' silly sentence" width="30%"/></center>
+<center><img src="assets/images/frameLast.jpg" alt="wireframe drawing of last page, where user is presented with a 'word-salad' silly sentence" width="30%"/></center>
 <br>     
 
 Image one  is the homepage that explains the word-classes and the second wirefram on it represents the 'ready?' page, which builds up a bit of fun tension before the quiz starts and adds some extra interactivity and involvement, as the user has a button to press to 'agree'. The actual 'ready' page is shown below:
@@ -80,53 +80,45 @@ This was added purely for extra interactivity. The whole focus of the page is th
 
 This page introduces the logo, which stays in the top left-hand centre of all the quiz pages. The same image (shown below) is also used as the favicon.
 
-center><img src="assets/images/logo.png" alt="word-salad logo" width="30%"/></center>
+<br>
+<center><img src="assets/images/logo.png" alt="word-salad logo" width="10%"/></center>
 <br>     
 
-I am aware that it is a bit too small to be distinctive as a favicon, and I would work on having a clearer favicon if I had the opportinity to work on the project again.
+I am aware that the image is too small to be distinctive as a favicon, and I would work on having a clearer one if I had the opportinity to work on the project again.
 
+-_The Quiz_-
 
-The icon used for the logo is from the Font Awesome library [Font Awesome website](fontawesome.com) and clearly indicates the subject matter of computing, while the shades of pink on the home page are a wry reference to what is stereotypically thought of as 'feminine taste'. The logo and title heading are repeated on all three pages.
+Each frame of the quiz has the same lead question and four possible answers, but each has a different keyword. The user chooses whether s/he thinks the word is a noun, adjective, verb or adverb. After the answer button is clicked by the user, the correct answer button turns green and the others turn pink, giving immediate feedback to the user.
 
-The WICH acronym was fun to come up with, and obviously points to the word 'witch'. This is intended to evoke the history of confident, intelligent women being considered oddballs and outsiders. Women software developers are, after all, still a small minority.
-
-All of the fonts are from Google Fonts [Google Fonts website](fonts.google.com), except for Courier. Courier is used on the landing page for smaller screens, as it is clearer to read and still in line with the themes of coding and history (i.e. typewriters).
-
-The hero image is by @lum3n and can be downloaded free of charge from Unsplash [Unsplash web address](https://unsplash.com/photos/-RBuQ2PK_L8).
-
-The tree wallpaper design used as a background throughout the site as been edited to different sizes and hues by me, but the original can be downloaded from the Creative Tacos site, which has a beautiful collection of free design resources. To find free background wallpaper options, look up 'digital papers' on https://creativetacos.com/ 
-
--_Timeline_-
-
-The timeline is the main focus of the website and it is where the most of the content is concentrated. Fourteen women coders are described, from Ada Lovelace's annotations on machine coding in 1843 to Valerie Johnson's current work as an advocate for women and people of colour in the tech industry. 
-
-Descriptions of each figure are short and easy to understand with technical terms such as "compiler" fully explained, making the timeline a bit of an introduction to the world of computing in general.
-
-Every description is accompanied by an image, and most are accompanied by a link to audio or video material for users who want to know more. Most people, especially young people, learn through all of their senses, not just through sight, so it was important to include audio material as well as videos that provide a 'break' from pure text. 
-
-Every image has an 'alt' tag, for users with visual impairments.
-
-The timeline has a different background for phones than for tablets and larger desktops. The smaller the device, the fewer colours used. I did not want to crowd the page with strong colours and contrasts for mobile phone screens, as this can affect concentration. The bigger desktops have background wallpaper for the timeline to add interest where the background might otherwise look too bare. 
-
-The wallpaper idea, also used for the headings and footers, was inspired by William Morris and the Arts and Crafts Movement. The movement roughly correlates with the period when machine readable code started being talked about. Morris began his apprenticeship as an embroiderer of textiles in the mid-1800s, when Ada Lovelace was working as a mathematician in the same city (London). Both were associated with radical politics (Morris was a socialist and Ada Lovelace was the daughter of Lord Byron).
-
-Timeline for mobile phones with neutral background (screenshot from my Huawei P30 lite):
+As the user will likely be a child, immediate feedback and reinforcement seemed important (children are less patient). There is the option to click an arrow button to go the next question or click the circular arrow button to go back to the homepage to revise the definitions before trying again. 
 
 <br>
-<center><img src="assets/images/mobtimeline.jpg" alt="screenshot on Huawei P30 lite phone of timeline" width="50%"/></center>
+<center><img src="assets/images/quiz.jpg" alt="screenshot of quiz page with pointer on the correct answer and the buttons turned green and red" width="50%"/></center>
 <br>     
 
-Timeline for tablets and smaller desktops with sky blue background (screenshot from my Surface Go):
+There is a hover effect on all of the buttons, and the curser turns into a pointer, helping children to navigate the mouse. The image above shows the four answer buttons in 'solution' mode, with the correct answer in green.
+
+There are 20 questions, shuffled each time, so they appear in a different order each time the game is played.
+
+-_Modal Text-Box on Completion_-
+
+When the 20 questions are answered, an orange modal text-box pops up, as shown below: 
 
 <br>
-<center><img src="assets/images/tabtimeline.png" alt="screenshot on Surface Go" width="50%"/></center>
-<br>   
+<center><img src="assets/images/modal.jpg" alt="screenshot of congratulatory pop-up on completion of quiz" width="50%"/></center>
+<br>     
 
-Timeline for larger desktops with 'wallpaper' as background (screen size 1882 x 1317px in Chrome dev tools):
+The user is given their score out of 20, and regardless of their actual score there is a congratulatory tone on completing the quiz. A word-salad silly sentence is generated and returned to the user, and they are asked to write some silly sentences of their own using the same noun, adjective, verb and adverb.  
 
-<br>
-<center><img src="assets/images/desktimeline.png" alt="screenshot on Surface Go" width="80%"/></center>
-<br>   
+The colours for the modal text-box are brighter than any other element on the pages so far, and the text is bold.
+
+-_'Well Done! Click Here to Go Again' button_-
+
+As shown above, the arrow button at the bottom of the quiz container is transformed into a 'well done' button when the quiz has been completed, and pressing the button restarts the quiz. The user is congratulated, regardless of their score, and encouraged to practice more. This is in keeping with educational approaches for children rather than competitive games for leisure.
+
+With extra time, I would certainly style this button to be a new colour! There is a smiley face on it, but it's easy to miss because it's the same colour and style as previous buttons.
+
+
 
 Code for the timeline was borrowed from the following website: https://alvarotrigo.com/blog/html-css-timelines. However, there were numerous bugs in the code, which I had to fix so that it worked on all sized screens. I'll discuss these later.
 
