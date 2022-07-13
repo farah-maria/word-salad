@@ -10,10 +10,10 @@ At the end of the quiz, the user is congratulated on completing, regardless on t
 
 In terms of the scope of the project, I decided to focus on just four word-classes. Not only did this mean there were only four possible answers repeated for each question, making it easy to style the answer buttons for just those particular words, but it meant that - given the timeline for project submission (I had two weeks) - I could make sure that these four concepts were fully explored in the quiz, giving the user plenty of practice to consolidate their knowledge. This seemed a far better option in terms of creating a fit-for-purpose real-world functioning educational tool. Otherwise, I might have been more ambitious in my scope but ended up with a quiz frustrating for the child user. Children do need a sense of positive achievement and progress in their educational activities, or else they can become discouraged after having a negative experience and subsequently decide they just don’t like “that awful, boring” subject anymore (in this case, grammar, which is a dry enough subject area to start with).
 
-Because grammar can be a dull subject, I gave the quiz a colourful background with a colour scheme based on the primary colours blue, green, yellow and red. This was suitable as it reflected the four possible answers/ word-classes of noun, verb, adverb and adjective, and also made the screen look playful and fun.  
+Because grammar can be a dull subject, I gave the quiz a colourful background with a colour-scheme based on the primary colours blue, green, yellow and red. This felt suitable as it reflected the four possible answers/ word-classes of noun, verb, adverb and adjective, and also made the screen look playful and fun.  
 
 <br>
-<center>Desktop version of homepage with 'hover' colour on 'home' along the navigation bar.<br><br><img src="assets/images/homepage-desk.jpg" alt="screenshot of homepage for desktop" width="60%"/></center>
+<center>Desktop version of homepage.<br><br><img src="assets/images/homePg.jpg" alt="screenshot of homepage for desktop" width="60%"/></center>
 <br>
 
 The imagery of nature and trees is used subtly throughout for the headings and footers, as nature generally helps people to relax. The imagery of trees also feeds into the idea of growth – personal growth through learning and evolution through time. Family trees are used to illustrate the growth of a family through many years, and the idea of using tree-imagery on a history site came from this usage.
