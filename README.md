@@ -118,81 +118,83 @@ As shown above, the arrow button at the bottom of the quiz container is transfor
 
 With extra time, I would certainly style this button to be a new colour! There is a smiley face on it, but it's easy to miss because it's the same colour and style as previous buttons.
 
+## **Testing**
 
+To test for design responsivity, I used the dev tools on Google Chrome to check for different screen sizes, starting with the dimensions on the iphone4. The iphone 4 is the smallest screen size catered for, and I am happy with this, as a young person should not be completing an educational quiz on a very tiny screen. 
 
-Code for the timeline was borrowed from the following website: https://alvarotrigo.com/blog/html-css-timelines. However, there were numerous bugs in the code, which I had to fix so that it worked on all sized screens. I'll discuss these later.
+I followed the advice outlined in my 'Sam's Teach Yourself' textbook that I have on CSS and HTML. "Focus your breakpoints on where your design starts to fail rather than worrying about specific devices or widths. It's also a good idea to strive for as few breakpoints as your design can handle and not be broken" (p.468, Colburn, Kyrnin & Lemay 2016). Rather than creating a media query for the dimensions of lots of devices, I just took my design and used the dev tools in Chrome to extend or reduce the size and took note of the points at which (measured in pixels) the page lost its integrity. Then I made my media queries based on this, but definitely starting with the precise dimensions of an iphone4. 
 
-All images for the timeline are open source, and from Wikimedia Commons (https://commons.wikimedia.org/wiki/Main_Page). 
-
-All links have an aria-label to help visually impaired users, and they open in a separate tab. The links are coloured violet to set them apart from the non-interactive text. 
-
--_Feedback Form_-
-
-The feedback form is responsive and functional on all different devices from the size of an iPhone 4 up. I already knew how to code forms from my HTML course material, however I taught myself how to make a fully responsive one from W3 schools "HOW TO - Responsive Form" at http://www.w3schools.com/howto/howto_css_responsive_form.asp/.
-
-I have yet to make this form active beyond the data being sent to the Code Institute form dump address. To make this website a functioning site of current use, the main thing I need to do is to change this, so that I receive the data and am able to respond to the feedback in how I develop the project in future.
-
-When I learn JavaScript later in my diploma course, I will use this language to code a properly interactive form with a pop up page that says "Thank you for submitting your feedback!". 
-
-As the timeline project is at its inception stage, I deliberately wanted a feedback form with space for whatever views users have. This is why there is a large text box. I'm effectively gathering views as if I'm holding a market research event, with the first users giving a full account of their views, first impressions and feelings. Later, when the project gathers momentum and there is a social media presence for WICH, I will narrow the options down on the form to radio button answers to specific questions.  
-
-The email address box only accepts text that is recognisably in the format of a proper email address (a validated and required input field). The form is not submitted unless an email address is entered. The addresses will eventually be used, when this site is live and fully functioning, for updates and possibly a newsletter or blog.
-
-## **Testing (and bugs!)**
-
-Two key aspects of this project are accessibility and design responsivity (media queries). To test for accessibility, I used the Lighthouse report generator in Chrome dev tools to check that the accessibility scores for the desktop and mobile versions of the site were over 70%. 
+To test for accessibility, I used the Lighthouse report generator in Chrome dev tools to check that the accessibility scores for the desktop and mobile versions of the site were over 70%, which they are. As shown by the screenshot below, the desktop version of the game scored extremely well on accessibility, performance and best practices.
 
 <br>
-<center><img src="assets/images/desk_lighthouse.png" alt="screenshot of lighthouse report for desktop version of the site" width="80%"/></center>
+<center><img src="assets/images/deskReport.jpg" alt="screenshot of lighthouse report for desktop version of the site" width="80%"/></center>
 <br>  
+
+The mobile version did not do as well in the Lighthouse report, but still scored cleanly over 70% each time I ran the report. 
 
 <br>
-<center><img src="assets/images/mob_lighthouse.png" alt="screenshot of lighthouse report for mobile version of the site" width="80%"/></center>
+<center><img src="assets/images/mobReport.jpg" alt="screenshot of lighthouse report for mobile version of the site" width="80%"/></center>
 <br>  
 
-The screenshots of the report are above. The first one is for the desktop version and the second one for mobiles. Despite my efforts to start from scratch a week into the project with a mobile first approach, it is the desktop version that scores most highly on all-round performance. The specific score for accessibility is 97%. The mobile version has the same score, with both versions of the site - mobile and desktop - also scoring 100% on best practice. This meant that thankfully, I did not have to go back to the drawing-board for this project. The accessibility scores are well above 70%.
+I noticed that the report results were  different when I ran them again, and I wasn't sure if the quality of my internet connection was causing this. When I ran the report again, I got a lower score, but it was still above 70% each time. The score for accessibility and best practices were still very high indeed for the mobile version.
 
-I also tested the site on real devices by checking how it looked on my phone (Huawei P30 lite), my friends' devices (I asked them send me screenshots), my tablet (Surface Go) and by checking all of the most common screen sizes from the smallest size of 320 x 480 pixels (the dimensions for the iphone4). I also tested the points at which the integrity of the webpages fell apart using Chrome dev tools. I used these to guide the creation of further media queries in my CSS code to remedy the 'glitches', so that when I played with the width and height in Chrome dev tools, the design seamlessly adapted. I learned about this adaptive approach from a 'Sam's Teach Yourself' textbook that I have on CSS and HTML. "Focus your breakpoints on where your design starts to fail rather than worrying about specific devices or widths. It's also a good idea to strive for as few breakpoints as your design can handle and not be broken" (p.468, Colburn, Kyrnin & Lemay 2016). If I could go back and do this project again, I would certainly aim for less media queries. The feedback form in particular required a lot of adjustments in CSS for different screen sizes, and even though the code "works" and my course mentor was happy with the design responsivity for all of the pages of the site, I could have saved a lot of time and effort if I simply taught myself CSS grids and used this for the whole of the feedback page.
+I taught myself how to use breakpoints in the Chrome dev tools, so I used these instead of console logs to check my JavaScript functions.
 
-I noticed early on that Chrome dev tools do not show how a site looks like on a given device in real life. This is because the browser adds elements to the top and the bottom of the page, and these are difficult to predict it varies with different browsers. When I tested the homepage on my phone, the footer dropped off the screen, but it was visible for the same dimensions in Chrome dev tools. I was told, for the sake for how this project is being assessed, to focus on what is shown by Chrome dev tools. However, I couldn't leave it alone, because I want this site to be of actual real-life use. I have coded the footer to come up higher on mobile devices so that it is always visible. It turns out that this makes the footer stand out more on smaller screens, so it probably pushed up the accessibility score on the Lighthouse report.   
-
-The timeline code turned out to not work in its entirety on different devices after it had been amended by me to include images and different fonts/ colours. Specifically, there was a join in the timeline that was visibly out of alignment. I used Chrome dev tools to click on this, and discover which bit of code needed amending. A similar issue came up that related to the dots on the timeline. They were not on the actual timeline, but floating off away from the descriptions about each woman in history. I found the bug in the same way and created a series of media queries that fix this for different screen sizes.
-
-I tested all of the links on the history line to make sure they were up to date and functional when clicked on. A bug that came up initially was that some of the links didn't work. The 'position: relative' style automatically gave the elements a z-index, so part of the div element was covering the link, making it unclickable. I worked this out with the help of a tutor. My adding 'position: relative' to the style for the links in CSS, this got fixed.
+I also used to dev tools window to see where there was an 'x' in red, and went to that part of the code to correct it. It turned out my syntax needed correcting in a few places.
 
  ## **Code Validation (and bugs!)**
 
- The HTML for the landing page, the timeline page and the feedback page all passed when I copied and pasted the code into the free w3 validator service online. The screenshots are below.  
+ Both pages of my HTML eventually passed when I copied and pasted the code into the free w3 validator service online. The screenshots are below.  
 
 <br>
-<center><img src="assets/images/hmpg_html_validation.png" alt="screenshot of pass report for landing page from w3 HTML validator" width="80%"/></center>
+<center><img src="assets/images/htmlHomVal.jpg" alt="screenshot of pass report for homepage from w3 HTML validator" width="80%"/></center>
 <br>  
 
 <br>
-<center><img src="assets/images/tmln_html_validation.png" alt="screenshot of pass report for timeline page from HTML validator" width="80%"/></center>
+<center><img src="assets/images/htmlValid.jpg" alt="screenshot of pass report for quiz pages from HTML validator" width="80%"/></center>
 <br>
 
-<br>
-<center><img src="assets/images/form_html_validation.png" alt="screenshot of pass report for feedback page from HTML validator" width="80%"/></center>
-<br>
+When I first tested the code, there were a few paragraph ending tags (</p>) where no paragraphs had been opened, so I replaced these with breaks (<br>).
 
-The CSS code for the website also passed when it was cut and paste into the Jigsaw w3 validation service online. The screenshot showing this is below.
+Also, I had created two buttons by placing anchor tags inside <button> tags, and the validator reminded me that this is not acceptable! I recalled that hyperlinks can still be styled as buttons with hover effects, etc, and was able to correct this and get my code to pass quite swiftly.
 
-<br>
-<center><img src="assets/images/css_validation.png" alt="screenshot of pass report for CSS code page from Jigsaw w3 validator" width="80%"/></center>
-<br>
-
-No errors were found in the HTML or the CSS code when tested two days prior to the submission of this project. Before this, however, there were some bugs I needed to swat! A few errors were found by the validator that I had to fix. It turned out that my history timeline was riddled with tags that were not closed properly... Below is an example.
+The CSS code for the site also passed when it was cut and paste into the Jigsaw w3 validation service online. The screenshot showing this is below.
 
 <br>
-<center><img src="assets/images/bugs.png" alt="screenshot of errors found by w3 HTML validator" width="80%"/></center>
+<center><img src="assets/images/cssValid.jpg" alt="screenshot of pass report for CSS code page from Jigsaw w3 validator" width="80%"/></center>
 <br>
 
-I went through the HTML with a fine toothcomb and discovered the problem. I was trying to wrap block elements with inline elements, and this meant that my paragraphs weren't closing properly. I fixed this, and correctly ordered my tags. I removed the use of divs to style the links embedded in various paragraphs, remembering that divs are used as outer-wrappers. I needed to be using the span element to style these links instead. My code passed after making these changes.
+Before it passed, however, I was reminded that a font-weight should not be a percentage, so I changed this and the code passed immediately.
+
+Using JShint for the first time to look at my Javascript code was a very different experience, as it doesn't offer a 'pass', but more detailed feedback. The main issues were missing semi-colons, which was an easy issue to remedy, and I was informed by the process that a number should start with . such as .5, but should rather be 0.5, so that it isn't mistaken as a dot instead of a decimal point. (See suggestion for line 29 below). 
+
+<br>
+<center><img src="assets/images/jHint.jpg" alt="screenshot of JSint report" width="80%"/></center>
+<br>
+
+I changed this, of course. The other remaining comments about ES6 code... well, I wasn't sure what to do about them, as the deadline was looming and my understanding from the course material on the LMS itself is that declaring a variable as 'const' is very much allowed on the course. I felt relatively confident enough about this, and that my arrow functions would surely get me a higher mark rather than a lower one. 
 
 ## **Deployment**
 
-I used GitHub pages to deploy my site. The process is simple. Click on 'settings' after going into the repository and scroll down. The menu down the lefthand side will have an option called 'pages'. Click on this, and after a few moments the site will be deployed and GitHub will automatically show a web address in blue. This is the address for the live site, which anyone can now access from their own devices.
+I used GitHub pages to deploy my site. The process was very simple. Go to the repo for 'Word-Salad' at https://github.com/farah-maria/word-salad (make sure it's hyphenated, as there is another version) and clone it. Here are notes from GitHub on how to clone a repository: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository.
+
+To deploy, I clicked on 'settings' after going into the repository and scrolled down. The menu down the lefthand side has an option called 'pages'. I clicked on this, and after a few moments the site was deployed and GitHub automatically showed the web address in blue. This is the address for the live site, which anyone can now access from their own devices. (The one for this quiz is: https://farah-maria.github.io/word-salad/).
+
+
+## **Documentation & Gitpod/Hub BUGS!!!**
+
+Besides this Read.md document, I regularly committed my changes using Git Pod/ Git Hub for version control. But after doing a hard reset in GitPod (git reset --hard 123456), a merge conflict occured and I am not sure how or why. I learned more about GitHub and the branches and head, and with some help on Slack managed to Git pull and choose which changes I wanted to go to the 'head' in various files in by clicking on them. I taught myself this, which might be helpful in future, but it was very worrysome. As this occured late at night, I cut and paste my code into a second, new repo to do a little bit more work on it. Thankfully, the project, in terms of coding, was already close to completion. When I solved the issue the next day, I moved the very minor changes back across and committed comments about this issue (as well as a poor internet connection, possibly).
+
+## Notes on extra aspects of JavaScript Coding that I learned and Tutorials I used**
+
+I learned about arrow functions and used these for more concise code.
+
+I started naming things with three letters such as 'str' or 'num' at the start to specificy whether it's a string, number etc. My mentor informed me, however, that this won't be necessary in future as I'll be using wrap-arounds for the JavaScript
+
+For the quiz, I watched Web Dev Simplified on YouTube, who has a video called 'Build A quiz with JavaScript' which can be found at: https://www.youtube.com/watch?v=riDzcEQbX6k.
+
+The idea for the word-salad sentences was built around a word-blank activity using JavaScript on YouTube, which can be found at: https://www.youtube.com/watch?v=PkGfIHuSRx0. I coded this into functions that would output to the HTML, and taught myself how to made a modal text box from W3 Schools (lesson at: How To - JS/CSS Modal https://www.w3schools.com/howto/howto_css_modals.asp).
+  
 
 ## **Acknowledgements**
 
