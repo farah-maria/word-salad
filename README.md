@@ -221,4 +221,3 @@ The idea for the word-salad sentences was built around a word-blank activity usi
 14. Colborn, R. Kyrnin, J. & Lemay, L. (2016) Sam's Teach Yourself HTML, CSS & JavaScript: Web Publishing in One Hour a Day. Pearson Education, Indiana.
 
 15. JShint - JavaScript Quality Tool: https://jshint.com/
-
