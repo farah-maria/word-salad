@@ -32,7 +32,7 @@ I wanted a simple structure to the quiz right from the beginning, when I hand-dr
 <center><img src="assets/images/frameLast.jpg" alt="wireframe drawing of last page, where user is presented with a 'word-salad' silly sentence" width="30%"/></center>
 <br>     
 
-Image one  is the homepage that explains the word-classes and the second wirefram on it represents the 'ready?' page, which builds up a bit of fun tension before the quiz starts and adds some extra interactivity and involvement, as the user has a button to press to 'agree'. The actual 'ready' page is shown below:
+Image one  is the homepage that explains the word-classes and the second wireframe on it represents the 'ready?' page, which builds up a bit of fun tension before the quiz starts and adds some extra interactivity and involvement, as the user has a button to press to 'agree'. The actual 'ready' page is shown below:
 
 <center><img src="assets/images/readyPg.jpg" alt="wireframe drawing of last page, where user is presented with a 'word-salad' silly sentence" width="30%"/></center>
 <br>     
@@ -48,7 +48,7 @@ When it came to the fonts, I used "Butterfly Kids" from Google Fonts for the qui
 
 ## Design Responsivity in Relation to User Experience, Scope & Strategy
 
-Design responsivity for different devices is essential for positive user experiences. According to a recent article  by the online magazine Design Rush (15 Screen Resolutions to Design For | DesignRush), 90% of website visitors bounce due to poor design, and I've seen first-hand how often parents hand their children an iphone to play games with to keep them quiet and entertained in public. I therefore took a mobile-first approach when designing and coding the project. The set-up of boxes and containers for questions and answers made it relatively easy to make the pages into a responsive grid. I did make sure the quiz looks nice on larger screens, too, as I'd like the quiz to be used educationally in homes and schools, where a desktop computer or tablet is more likely to be used for learning activities. 
+Design responsivity for different devices is essential for positive user experiences. According to a recent article  by the online magazine Design Rush (15 Screen Resolutions to Design For | DesignRush), 90% of website visitors bounce due to poor design, and I've seen first-hand how often parents hand their children an iPhone to play games with to keep them quiet and entertained in public. I therefore took a mobile-first approach when designing and coding the project. The set-up of boxes and containers for questions and answers made it relatively easy to make the pages into a responsive grid. I did make sure the quiz looks nice on larger screens, too, as I'd like the quiz to be used educationally in homes and schools, where a desktop computer or tablet is more likely to be used for learning activities. 
 
 I made sure there was strong contrast between content and the background - the pastel-coloured spots in the background are distinctive but not too loud or distracting. I aimed to make the quiz look clean-cut, simple and fun. 
 
@@ -84,7 +84,7 @@ This page introduces the logo, which stays in the top left-hand centre of all th
 <center><img src="assets/images/logo.png" alt="word-salad logo" width="10%"/></center>
 <br>     
 
-I am aware that the image is too small to be distinctive as a favicon, and I would work on having a clearer one if I had the opportinity to work on the project again.
+I am aware that the image is too small to be distinctive as a favicon, and I would work on having a clearer one if I had the opportunity to work on the project again.
 
 -_The Quiz_-
 
@@ -120,7 +120,7 @@ With extra time, I would certainly style this button to be a new colour! There i
 
 ## **Testing**
 
-To test for design responsivity, I used the dev tools on Google Chrome to check for different screen sizes, starting with the dimensions on the iphone4. The iphone 4 is the smallest screen size catered for, and I am happy with this, as a young person should not be completing an educational quiz on a very tiny screen. 
+To test for design responsivity, I used the dev tools on Google Chrome to check for different screen sizes, starting with the dimensions on the iPhone 4. The iPhone 4 is the smallest screen size catered for, and I am happy with this, as a young person should not be completing an educational quiz on a very tiny screen. 
 
 I followed the advice outlined in my 'Sam's Teach Yourself' textbook that I have on CSS and HTML. "Focus your breakpoints on where your design starts to fail rather than worrying about specific devices or widths. It's also a good idea to strive for as few breakpoints as your design can handle and not be broken" (p.468, Colburn, Kyrnin & Lemay 2016). Rather than creating a media query for the dimensions of lots of devices, I just took my design and used the dev tools in Chrome to extend or reduce the size and took note of the points at which (measured in pixels) the page lost its integrity. Then I made my media queries based on this, but definitely starting with the precise dimensions of an iphone4. 
 
@@ -166,10 +166,10 @@ The CSS code for the site also passed when it was cut and paste into the Jigsaw 
 
 Before it passed, however, I was reminded that a font-weight should not be a percentage, so I changed this and the code passed immediately.
 
-Using JShint for the first time to look at my Javascript code was a very different experience, as it doesn't offer a 'pass', but more detailed feedback. The main issues were missing semi-colons, which was an easy issue to remedy, and I was informed by the process that a number should start with . such as .5, but should rather be 0.5, so that it isn't mistaken as a dot instead of a decimal point. (See suggestion for line 29 below). 
+Using JShint for the first time to look at my JavaScript code was a very different experience, as it doesn't offer a 'pass', but more detailed feedback. The main issues were missing semi-colons, which was an easy issue to remedy, and I was informed by the process that a number should start with . such as .5, but should rather be 0.5, so that it isn't mistaken as a dot instead of a decimal point. (See suggestion for line 29 below). 
 
 <br>
-<center><img src="assets/images/jHint.jpg" alt="screenshot of JSint report" width="80%"/></center>
+<center><img src="assets/images/jHint.jpg" alt="screenshot of JShint report" width="80%"/></center>
 <br>
 
 I changed this, of course. The other remaining comments about ES6 code... well, I wasn't sure what to do about them, as the deadline was looming and my understanding from the course material on the LMS itself is that declaring a variable as 'const' is very much allowed on the course. I felt relatively confident enough about this, and that my arrow functions would surely get me a higher mark rather than a lower one. 
@@ -183,13 +183,13 @@ To deploy, I clicked on 'settings' after going into the repository and scrolled 
 
 ## **Documentation & Gitpod/Hub BUGS!!!**
 
-Besides this Read.md document, I regularly committed my changes using Git Pod/ Git Hub for version control. But after doing a hard reset in GitPod (git reset --hard 123456), a merge conflict occured and I am not sure how or why. I learned more about GitHub and the branches and head, and with some help on Slack managed to Git pull and choose which changes I wanted to go to the 'head' in various files in by clicking on them. I taught myself this, which might be helpful in future, but it was very worrysome. As this occured late at night, I cut and paste my code into a second, new repo to do a little bit more work on it. Thankfully, the project, in terms of coding, was already close to completion. When I solved the issue the next day, I moved the very minor changes back across and committed comments about this issue (as well as a poor internet connection, possibly).
+Besides this Read.md document, I regularly committed my changes using Git Pod/ Git Hub for version control. But after doing a hard reset in GitPod (git reset --hard 123456), a merge conflict occurred and I am not sure how or why. I learned more about GitHub and the branches and head, and with some help on Slack managed to Git pull and choose which changes I wanted to go to the 'head' in various files in by clicking on them. I taught myself this, which might be helpful in future, but it was very worrisome. As this occurred late at night, I cut and paste my code into a second, new repo to do a little bit more work on it. Thankfully, the project, in terms of coding, was already close to completion. When I solved the issue the next day, I moved the very minor changes back across and committed comments about this issue (as well as a poor internet connection, possibly).
 
 ## Notes on extra aspects of JavaScript Coding that I learned and Tutorials I used**
 
 I learned about arrow functions and used these for more concise code.
 
-I started naming things with three letters such as 'str' or 'num' at the start to specificy whether it's a string, number etc. My mentor informed me, however, that this won't be necessary in future as I'll be using wrap-arounds for the JavaScript
+I started naming things with three letters such as 'str' or 'num' at the start to specify whether it's a string, number etc, as JavaScript can be a bit problematic when it comes to getting data types mixed-up. My mentor informed me, however, that this won't be necessary in future as I'll be using wrap-arounds for the JavaScript
 
 For the quiz, I watched Web Dev Simplified on YouTube, who has a video called 'Build A quiz with JavaScript' which can be found at: https://www.youtube.com/watch?v=riDzcEQbX6k.
 
@@ -206,7 +206,7 @@ The idea for the word-salad sentences was built around a word-blank activity usi
 
 5. Background image by rawpixel.com, downloaded from freepik.com.  https://www.freepik.com/free-vector/colorful-geometric-seamless-pattern-background-design_13311484.htm#query=kids%20background&position=0&from_view=keyword
 
-6. Code for basic quiz inspired by Web Dev Simplied on YouTube: https://www.youtube.com/watch?v=riDzcEQbX6k 
+6. Code for basic quiz inspired by Web Dev Simplified on YouTube: https://www.youtube.com/watch?v=riDzcEQbX6k 
 
 7. Idea for word-salad sentence inspired by word-blanks challenge from Free Code Camp's Word Blank Challenge: https://www.youtube.com/watch?v=PkGfIHuSRx0
 
