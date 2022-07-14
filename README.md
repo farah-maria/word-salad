@@ -194,7 +194,7 @@ I started naming things with three letters such as 'str' or 'num' at the start t
 For the quiz, I watched Web Dev Simplified on YouTube, who has a video called 'Build A quiz with JavaScript' which can be found at: https://www.youtube.com/watch?v=riDzcEQbX6k.
 
 The idea for the word-salad sentences was built around a word-blank activity using JavaScript on YouTube, which can be found at: https://www.youtube.com/watch?v=PkGfIHuSRx0. I coded this into functions that would output to the HTML, and taught myself how to made a modal text box from W3 Schools (lesson at: How To - JS/CSS Modal https://www.w3schools.com/howto/howto_css_modals.asp).
-  
+
 
 ## **Acknowledgements**
 
@@ -202,21 +202,15 @@ The idea for the word-salad sentences was built around a word-blank activity usi
 
 2. Google Fonts. (https://fonts.google.com/) 
 
-3. Canva. (canva.com/learn/best-google-font-combinations).
+3. Font Awesome. (https://fontawesome.com/)
 
-4. Font Awesome. (https://fontawesome.com/)
+5. Background image by rawpixel.com, downloaded from freepik.com.  https://www.freepik.com/free-vector/colorful-geometric-seamless-pattern-background-design_13311484.htm#query=kids%20background&position=0&from_view=keyword
 
-5. Hero image by @lum3n on Unsplash [Unsplash web address](https://unsplash.com/photos/-RBuQ2PK_L8).
+6. Code for basic quiz inspired by Web Dev Simplied on YouTube: https://www.youtube.com/watch?v=riDzcEQbX6k 
 
-6. Digital papers used as backgrounds throughout the site originally sourced from Creative Tacos (https://creativetacos.com/). 
+7. Idea for word-salad sentence inspired by word-blanks challenge from Free Code Camp's Word Blank Challenge: https://www.youtube.com/watch?v=PkGfIHuSRx0
 
-7. Code for timeline inspired by https://alvarotrigo.com/blog/html-css-timelines. I added floating images and different fonts, which meant that I had to edit the code.
-
-8. All images for the timeline are open source and from Wikimedia Commons (https://commons.wikimedia.org/wiki/Main_Page). 
-
-9. W3 schools "HOW TO - Responsive Form" at http://www.w3schools.com/howto/howto_css_responsive_form.asp/.
-
-10. 'Website Dimensions: These are the 15 Most Common 15 Screen Resolutions to Design for'. Design Rush. Updated 05/05/2022. https://www.designrush.com/agency/web-development-companies/trends/website-dimensions
+8. W3 schools "HOW TO - JS/CSS Modal" at https://www.w3schools.com/howto/howto_css_modals.asp
 
 11. Chrome developer tools, including Lighthouse. https://developer.chrome.com/docs/lighthouse/overview/
 
@@ -226,18 +220,5 @@ The idea for the word-salad sentences was built around a word-blank activity usi
 
 14. Colborn, R. Kyrnin, J. & Lemay, L. (2016) Sam's Teach Yourself HTML, CSS & JavaScript: Web Publishing in One Hour a Day. Pearson Education, Indiana.
 
-15. Information about the history of female coders was from a range of sources, including the Encyclopaedia Britannica online (https://www.britannica.com/). I also watched the wonderful 2016 film, Hidden Figures, and took notes. Links to articles, YouTube videos and audio can be found on the timeline page of the site, with acknowledgements also below...
+15. JShint - JavaScript Quality Tool: https://jshint.com/
 
-16. Jones, B. & Larson, L. (2019)'Long before Gates or Jobs, 6 women programmed the first digital computer', Digital Trends, https://www.digitaltrends.com/computing/remembering-eniac-and-the-women-who-programmed-it/
-
-17. Shetterly, M. L. NASA biography of Katherine Johnson, https://www.nasa.gov/content/katherine-johnson-biography/. 
-
-18. Women's Stories, (2014) 'Who is Grace Hopper?', https://youtube.be/Fg82iV-L8ZY (video).
-
-19. STEM for Success, (2021) Valerie Thomas: Transmitting the Future, https://www.youtube.com/watch?v=EWBlW1xgAow. 
-
-20. Lantero, A. (2016) 'Five Fast Facts About Rocket Scientist Annie Easley' https://www.energy.gov/articles/five-fast-facts-about-rocket-scientist-annie-easley
-
-21. Youtube interview with "Hidden Figures" author Margot Lee Shetterly: https://www.youtube.com/watch?v=PdbPkCGUq9k
-
-22. Biography magazine (2016) 'Dorothy Johnson Vaughan', https://www.biography.com/scientist/dorothy-johnson-vaughan
