@@ -25,16 +25,17 @@ Clear navigation, consistency in design and accessibility were important in the 
 I wanted a simple structure to the quiz right from the beginning, when I hand-drew my wireframes...
 
 <br>
-<center><img src="assets/images/framesOneTwo.jpg" alt="wireframe drawing for homepage and 'ready?' page" width="30%"/></center>
+<p align="center"><img src="assets/images/framesOneTwo.jpg" alt="wireframe drawing for homepage and 'ready?' page" width="30%"/></p>
 <br>
-<center><img src="assets/images/framesThr_Five.jpg" alt="wireframe drawings of question and answer pages of quiz" width="45%"/></center>     
+<p align="center"><img src="assets/images/framesThr_Five.jpg" alt="wireframe drawings of question and answer pages of quiz" width="45%"/></p>     
 <br>
-<center><img src="assets/images/frameLast.jpg" alt="wireframe drawing of last page, where user is presented with a 'word-salad' silly sentence" width="30%"/></center>
+<p align="center"><img src="assets/images/frameLast.jpg" alt="wireframe drawing of last page, where user is presented with a 'word-salad' silly sentence" width="30%"/></p>
 <br>     
 
 Image one  is the homepage that explains the word-classes and the second wireframe on it represents the 'ready?' page, which builds up a bit of fun tension before the quiz starts and adds some extra interactivity and involvement, as the user has a button to press to 'agree'. The actual 'ready' page is shown below:
 
-<center><img src="assets/images/readyPg.jpg" alt="wireframe drawing of last page, where user is presented with a 'word-salad' silly sentence" width="30%"/></center>
+<br>
+<p align="center"><img src="assets/images/readyPg.jpg" alt="wireframe drawing of last page, where user is presented with a 'word-salad' silly sentence" width="30%"/></p>
 <br>     
 
 
@@ -81,7 +82,7 @@ This was added purely for extra interactivity. The whole focus of the page is th
 This page introduces the logo, which stays in the top left-hand centre of all the quiz pages. The same image (shown below) is also used as the favicon.
 
 <br>
-<center><img src="assets/images/logo.png" alt="word-salad logo" width="10%"/></center>
+<p align="center"><img src="assets/images/logo.png" alt="word-salad logo" width="10%"/></p>
 <br>     
 
 I am aware that the image is too small to be distinctive as a favicon, and I would work on having a clearer one if I had the opportunity to work on the project again.
@@ -93,7 +94,7 @@ Each frame of the quiz has the same lead question and four possible answers, but
 As the user will likely be a child, immediate feedback and reinforcement seemed important (children are less patient). There is the option to click an arrow button to go the next question or click the circular arrow button to go back to the homepage to revise the definitions before trying again. 
 
 <br>
-<center><img src="assets/images/quiz.jpg" alt="screenshot of quiz page with pointer on the correct answer and the buttons turned green and red" width="50%"/></center>
+<p align="center"><img src="assets/images/quiz.jpg" alt="screenshot of quiz page with pointer on the correct answer and the buttons turned green and red" width="50%"/></p>
 <br>     
 
 There is a hover effect on all of the buttons, and the curser turns into a pointer, helping children to navigate the mouse. The image above shows the four answer buttons in 'solution' mode, with the correct answer in green.
@@ -105,7 +106,7 @@ There are 20 questions, shuffled each time, so they appear in a different order 
 When the 20 questions are answered, an orange modal text-box pops up, as shown below: 
 
 <br>
-<center><img src="assets/images/modal.jpg" alt="screenshot of congratulatory pop-up on completion of quiz" width="50%"/></center>
+<p align="center"><img src="assets/images/modal.jpg" alt="screenshot of congratulatory pop-up on completion of quiz" width="50%"/></p>
 <br>     
 
 The user is given their score out of 20, and regardless of their actual score there is a congratulatory tone on completing the quiz. A word-salad silly sentence is generated and returned to the user, and they are asked to write some silly sentences of their own using the same noun, adjective, verb and adverb.  
@@ -127,13 +128,13 @@ I followed the advice outlined in my 'Sam's Teach Yourself' textbook that I have
 To test for accessibility, I used the Lighthouse report generator in Chrome dev tools to check that the accessibility scores for the desktop and mobile versions of the site were over 70%, which they are. As shown by the screenshot below, the desktop version of the game scored extremely well on accessibility, performance and best practices.
 
 <br>
-<center><img src="assets/images/deskReport.jpg" alt="screenshot of lighthouse report for desktop version of the site" width="80%"/></center>
+<p align="center"><img src="assets/images/deskReport.jpg" alt="screenshot of lighthouse report for desktop version of the site" width="80%"/></p>
 <br>  
 
 The mobile version did not do as well in the Lighthouse report, but still scored cleanly over 70% each time I ran the report. 
 
 <br>
-<center><img src="assets/images/mobReport.jpg" alt="screenshot of lighthouse report for mobile version of the site" width="80%"/></center>
+<p align="center"><img src="assets/images/mobReport.jpg" alt="screenshot of lighthouse report for mobile version of the site" width="80%"/></p>
 <br>  
 
 I noticed that the report results were  different when I ran them again, and I wasn't sure if the quality of my internet connection was causing this. When I ran the report again, I got a lower score, but it was still above 70% each time. The score for accessibility and best practices were still very high indeed for the mobile version.
@@ -147,11 +148,11 @@ I also used to dev tools window to see where there was an 'x' in red, and went t
  Both pages of my HTML eventually passed when I copied and pasted the code into the free w3 validator service online. The screenshots are below.  
 
 <br>
-<center><img src="assets/images/htmlHomVal.jpg" alt="screenshot of pass report for homepage from w3 HTML validator" width="80%"/></center>
+<p align="center"><img src="assets/images/htmlHomVal.jpg" alt="screenshot of pass report for homepage from w3 HTML validator" width="80%"/></p>
 <br>  
 
 <br>
-<center><img src="assets/images/htmlValid.jpg" alt="screenshot of pass report for quiz pages from HTML validator" width="80%"/></center>
+<p align="center"><img src="assets/images/htmlValid.jpg" alt="screenshot of pass report for quiz pages from HTML validator" width="80%"/></p>
 <br>
 
 When I first tested the code, there were a few paragraph ending tags (</p>) where no paragraphs had been opened, so I replaced these with breaks (<br>).
@@ -161,7 +162,7 @@ Also, I had created two buttons by placing anchor tags inside <button> tags, and
 The CSS code for the site also passed when it was cut and paste into the Jigsaw w3 validation service online. The screenshot showing this is below.
 
 <br>
-<center><img src="assets/images/cssValid.jpg" alt="screenshot of pass report for CSS code page from Jigsaw w3 validator" width="80%"/></center>
+<p align="center"><img src="assets/images/cssValid.jpg" alt="screenshot of pass report for CSS code page from Jigsaw w3 validator" width="80%"/></p>
 <br>
 
 Before it passed, however, I was reminded that a font-weight should not be a percentage, so I changed this and the code passed immediately.
@@ -169,7 +170,7 @@ Before it passed, however, I was reminded that a font-weight should not be a per
 Using JShint for the first time to look at my JavaScript code was a very different experience, as it doesn't offer a 'pass', but more detailed feedback. The main issues were missing semi-colons, which was an easy issue to remedy, and I was informed by the process that a number should start with . such as .5, but should rather be 0.5, so that it isn't mistaken as a dot instead of a decimal point. (See suggestion for line 29 below). 
 
 <br>
-<center><img src="assets/images/jHint.jpg" alt="screenshot of JShint report" width="80%"/></center>
+<p align="center"><img src="assets/images/jHint.jpg" alt="screenshot of JShint report" width="80%"/></p>
 <br>
 
 I changed this, of course. The other remaining comments about ES6 code... well, I wasn't sure what to do about them, as the deadline was looming and my understanding from the course material on the LMS itself is that declaring a variable as 'const' is very much allowed on the course. I felt relatively confident enough about this, and that my arrow functions would surely get me a higher mark rather than a lower one. 
