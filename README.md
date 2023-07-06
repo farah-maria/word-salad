@@ -4,7 +4,7 @@ Word Salad a fun and colourful grammar themed quiz aimed at kids who need to pra
 At the end of the quiz, the user is congratulated on completing, regardless on their score, and is presented with a “silly word-salad sentence” that is generated using the words they have been working with. They are prompted to write some silly sentences of their own using the same key words and are encouraged to play the quiz again. Each time the quiz is played, a different silly sentence is generated.
 
 
-<center>![mock-up of site on different sized devices](assets/images/amiresponsive.jpg)</center>
+<center>![mock-up of site on different sized devices]<img src="assets/images/amiresponsive.jpg"></center>
 
 ## **Project Scope, Design & User Experience**
 
